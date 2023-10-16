@@ -163,3 +163,18 @@ on_babylon_monthly_pulse_allow_incorporation = {
 		}
 	}
 }
+
+on_babylon_monthly_pulse_state = {
+    effect = {
+        babylon_arable_land_green_grass_effect = yes
+        if = {
+            limit = {
+                occupation_fraction = 1
+            }
+            add_modifier = {
+                name = babylon_war_infrastructure
+                days = 30 
+            }
+        }
+    }
+}

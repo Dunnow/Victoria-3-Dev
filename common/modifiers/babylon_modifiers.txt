@@ -443,3 +443,8 @@ babylon_state_infamy = {
 	state_migration_push_mult = 0.3
 	state_radicals_from_sol_change_mult = 0.75
 }
+babylon_war_infrastructure = {
+    icon = gfx/interface/icons/infamy_icons/pariah.dds
+    state_infrastructure_mult = -2
+    state_infrastructure_from_population_max_mult = -2
+}
