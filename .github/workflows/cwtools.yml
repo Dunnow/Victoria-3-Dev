@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v1 # required
     - uses: cwtools/cwtools-action@v1.1.0
       with:
-        game: vic2
+        game: eu4
         locLanguages: "english"
         rules: "https://github.com/indexoquarto/cwtools-vic3-config.git"
         changedFilesOnly: "0"      
