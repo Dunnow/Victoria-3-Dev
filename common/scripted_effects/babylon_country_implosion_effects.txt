@@ -483,7 +483,6 @@
 		}
 	}
 }
-
 babylon_country_implosion_follow_up = {
 	every_country = {
 		limit = {

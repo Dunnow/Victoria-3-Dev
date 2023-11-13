@@ -7,7 +7,6 @@
 		pm_arcades
 	}
 }
-
 pmg_street_lighting = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
@@ -16,7 +15,6 @@ pmg_street_lighting = {
 		pm_electric_streetlights
 	}
 }
-
 pmg_public_transport = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	production_methods = {
@@ -28,7 +26,6 @@ pmg_public_transport = {
 		pm_motor_buses
 	}
 }
-
 pmg_urban_clergy = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
@@ -37,11 +34,9 @@ pmg_urban_clergy = {
 		pm_no_urban_clergy
 	}
 }
-
 pmg_base_building_arts_academy = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
-
 	production_methods = {
 		pm_traditional_art
 		pm_realist_art
@@ -49,7 +44,6 @@ pmg_base_building_arts_academy = {
 		pm_film_art
 	}
 }
-
 pmg_ownership_building_arts_academy = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {
@@ -58,7 +52,6 @@ pmg_ownership_building_arts_academy = {
 		pm_independent_artists
 	}
 }
-
 pmg_base_building_power_plant = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
@@ -67,7 +60,6 @@ pmg_base_building_power_plant = {
 		pm_oil-fired_plant
 	}
 }
-
 pmg_ownership_capital_building_power_plant = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	production_methods = {

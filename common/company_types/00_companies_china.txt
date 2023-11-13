@@ -1,19 +1,15 @@
 ﻿# Kaiping Mining Company
 company_kaiping_mining = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/chinese_kaiping_mining_company.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_coal_mine
 		building_railway
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_north_china
 	}
-	
-	possible = { 
+	possible = {
 		any_scope_state = {
 			OR = {
 				state_region = s:STATE_BEIJING
@@ -28,32 +24,25 @@ company_kaiping_mining = {
 		has_technology_researched = steam_donkey
 		has_technology_researched = railways
 	}
-	
 	prosperity_modifier = {
 		country_tech_spread_mult = 0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Hanyang Arsenal
 company_hanyang_arsenal = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/chinese_hanyang_arsenal.dds"
-	
 	flavored_company = yes
-	
-	building_types = { 
+	building_types = {
 		building_arms_industry
 		building_artillery_foundries
 		building_munition_plants
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_south_china
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_EASTERN_HUBEI
@@ -65,31 +54,24 @@ company_hanyang_arsenal = {
 		}
 		has_technology_researched = rifling
 	}
-	
 	prosperity_modifier = {
 		unit_morale_recovery_mult = 0.15
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Foochow Arsenal; Babylon - replaced navy offense/defense
 company_foochow_arsenal = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/chinese_foochow_arsenal.dds"
-	
 	flavored_company = yes
-	
-	building_types = { 
+	building_types = {
 		building_shipyards
 		building_military_shipyards
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_south_china
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_FUJIAN
@@ -102,31 +84,24 @@ company_foochow_arsenal = {
 		has_technology_researched = ironclad_tech
 		has_technology_researched = gantry_cranes
 	}
-	
 	prosperity_modifier = {
 		country_military_tech_spread_mult = 0.05
 		state_building_port_max_level_add = 5
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Jingdezhen Porcelain
 company_jingdezhen = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/chinese_jingdezhen_kilns.dds"
-	
 	flavored_company = yes
-	
-	building_types = { 
+	building_types = {
 		building_glassworks
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_south_china
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_FUJIAN
@@ -138,13 +113,11 @@ company_jingdezhen = {
 		}
 		has_technology_researched = chemical_bleaching
 	}
-	
 	prosperity_modifier = {
 		country_prestige_mult = 0.15
 		building_lead_mine_throughput_add = 0.05
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }

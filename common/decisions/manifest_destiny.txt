@@ -1,16 +1,15 @@
 ﻿manifest_destiny = {
-
 	is_shown = {
 		exists = c:USA
 		root = c:USA
-		NOT = { has_variable = manifested_destiny }
+		NOT = {
+			has_variable = manifested_destiny
+		}
 	}
-
 	possible = {
 		has_technology_researched = nationalism
 		has_interest_marker_in_region = region_pacific_coast
 	}
-
 	when_taken = {
 		if = {
 			limit = {
@@ -27,7 +26,9 @@
 					}
 				}
 			}
-			trigger_event = { id = manifest_destiny.1 }
+			trigger_event = {
+				id = manifest_destiny.1
+			}
 		}
 		else = {
 			add_journal_entry = {
@@ -44,7 +45,9 @@
 				owns_entire_state_region = STATE_NEBRASKA
 				owns_entire_state_region = STATE_KANSAS
 			}
-			trigger_event = { id = manifest_destiny.2 }
+			trigger_event = {
+				id = manifest_destiny.2
+			}
 		}
 		else = {
 			add_journal_entry = {
@@ -72,21 +75,9 @@
 				country = c:MEX
 				value = 20
 			}
-		}	
+		}
 		# Add Claims
-		s:STATE_CALIFORNIA = { 
-			if = {
-				limit = {
-					any_scope_state = {
-						 NOT = {
-							owner = ROOT
-						}
-					}
-				}
-				add_claim = ROOT 
-			}
-		}
-		s:STATE_NEVADA = {  
+		s:STATE_CALIFORNIA = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -95,10 +86,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_UTAH = { 
+		s:STATE_NEVADA = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -107,10 +98,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_ARIZONA = { 
+		s:STATE_UTAH = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -119,10 +110,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_NEW_MEXICO = { 
+		s:STATE_ARIZONA = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -131,10 +122,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_OKLAHOMA = { 
+		s:STATE_NEW_MEXICO = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -143,10 +134,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_MONTANA = { 
+		s:STATE_OKLAHOMA = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -155,10 +146,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_WYOMING = {  
+		s:STATE_MONTANA = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -167,10 +158,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_COLORADO = { 
+		s:STATE_WYOMING = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -179,10 +170,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_NORTH_DAKOTA = { 
+		s:STATE_COLORADO = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -191,10 +182,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_SOUTH_DAKOTA = { 
+		s:STATE_NORTH_DAKOTA = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -203,10 +194,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_NEBRASKA = { 
+		s:STATE_SOUTH_DAKOTA = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -215,10 +206,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_KANSAS = { 
+		s:STATE_NEBRASKA = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -227,10 +218,10 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
 			}
 		}
-		s:STATE_TEXAS = { 
+		s:STATE_KANSAS = {
 			if = {
 				limit = {
 					any_scope_state = {
@@ -239,12 +230,23 @@
 						}
 					}
 				}
-				add_claim = ROOT 
+				add_claim = ROOT
+			}
+		}
+		s:STATE_TEXAS = {
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
 			}
 		}
 		set_variable = manifested_destiny
 	}
-
 	ai_chance = {
 		base = 10
 	}

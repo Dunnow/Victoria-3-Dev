@@ -1,4 +1,4 @@
-namespace = babylon_bulgarian_independence
+﻿namespace = babylon_bulgarian_independence
 babylon_bulgarian_independence.1 = {
 	type = country_event
 	placement = root
@@ -13,6 +13,7 @@ babylon_bulgarian_independence.1 = {
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
 	trigger = {
+
 	}
 	immediate = {
 		create_character = {
@@ -20,12 +21,13 @@ babylon_bulgarian_independence.1 = {
 			culture = cu:bulgarian
 			interest_group = ig_armed_forces
 			traits = {
+
 			}
 		}
-		c:BUL = { 
-			heir = { 
-				disinherit_character = yes 
-			} 
+		c:BUL = {
+			heir = {
+				disinherit_character = yes
+			}
 		}
 	}
 	option = {

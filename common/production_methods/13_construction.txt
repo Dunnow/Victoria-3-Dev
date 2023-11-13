@@ -1,20 +1,16 @@
 ﻿pm_wooden_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
-	
 	is_default = yes
-
 	country_modifiers = {
 		workforce_scaled = {
 			country_construction_add = 2
 		}
 	}
-
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_fabric_add = 25
 			goods_input_wood_add = 75
 		}
-
 		level_scaled = {
 			building_employment_bureaucrats_add = 500
 			building_employment_clerks_add = 500
@@ -24,26 +20,21 @@
 			building_laborers_mortality_mult = 0.1
 		}
 	}
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.002
-		}	
+		}
 	}
 }
-
 pm_iron_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/iron_frame_buildings.dds"
-	
 	unlocking_technologies = {
 		urban_planning
 	}
-
 	country_modifiers = {
 		workforce_scaled = {
 			country_construction_add = 4
 		}
-
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -52,7 +43,6 @@ pm_iron_frame_buildings = {
 			goods_input_iron_add = 50
 			goods_input_tools_add = 10
 		}
-
 		level_scaled = {
 			building_employment_bureaucrats_add = 500
 			building_employment_clerks_add = 500
@@ -63,27 +53,22 @@ pm_iron_frame_buildings = {
 			building_laborers_mortality_mult = 0.1
 		}
 	}
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.004
-		}	
+		}
 	}
 }
-
 pm_steel_frame_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/steel_frame_buildings.dds"
-
 	unlocking_technologies = {
 		steel_frame_buildings
 	}
-
 	country_modifiers = {
 		workforce_scaled = {
 			country_construction_add = 8
 		}
 	}
-
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_steel_add = 50
@@ -91,7 +76,6 @@ pm_steel_frame_buildings = {
 			goods_input_explosives_add = 10
 			goods_input_tools_add = 20
 		}
-
 		level_scaled = {
 			building_employment_bureaucrats_add = 500
 			building_employment_clerks_add = 500
@@ -102,27 +86,22 @@ pm_steel_frame_buildings = {
 			building_laborers_mortality_mult = 0.1
 		}
 	}
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.007
-		}	
+		}
 	}
 }
-
 pm_arc_welded_buildings = {
 	texture = "gfx/interface/icons/production_method_icons/arc_welded_buildings.dds"
-
 	unlocking_technologies = {
 		electric_arc_process
 	}
-		
 	country_modifiers = {
 		workforce_scaled = {
 			country_construction_add = 16
 		}
 	}
-
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_steel_add = 60
@@ -130,8 +109,7 @@ pm_arc_welded_buildings = {
 			goods_input_explosives_add = 15
 			goods_input_tools_add = 30
 			goods_input_electricity_add = 40
-		} 
-
+		}
 		level_scaled = {
 			building_employment_bureaucrats_add = 500
 			building_employment_clerks_add = 500
@@ -143,12 +121,10 @@ pm_arc_welded_buildings = {
 			building_laborers_mortality_mult = 0.05
 		}
 	}
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_construction_mult = 0.01
-		}	
+		}
 	}
-
 	required_input_goods = electricity
 }

@@ -13,6 +13,7 @@ sick_man.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	trigger = {
+
 	}
 	immediate = {
 		set_variable = {
@@ -85,7 +86,6 @@ sick_man.1 = {
 		}
 	}
 }
-
 # Liberal Success event
 sick_man.2 = {
 	type = country_event
@@ -100,6 +100,7 @@ sick_man.2 = {
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	trigger = {
+
 	}
 	immediate = {
 		set_variable = sick_man_complete
@@ -261,7 +262,6 @@ sick_man.2 = {
 		add_primary_culture = cu:turkmen
 	}
 }
-
 # Fail event
 sick_man.3 = {
 	type = country_event
@@ -276,6 +276,7 @@ sick_man.3 = {
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	trigger = {
+
 	}
 	immediate = {
 		set_variable = sick_man_complete
@@ -327,7 +328,6 @@ sick_man.3 = {
 		}
 	}
 }
-
 # Choice Event
 sick_man.4 = {
 	type = country_event
@@ -401,7 +401,6 @@ sick_man.4 = {
 		}
 	}
 }
-
 # Absolute Success event
 sick_man.5 = {
 	type = country_event
@@ -416,6 +415,7 @@ sick_man.5 = {
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	trigger = {
+
 	}
 	immediate = {
 		set_variable = sick_man_complete

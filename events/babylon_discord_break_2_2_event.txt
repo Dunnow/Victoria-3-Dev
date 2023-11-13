@@ -128,7 +128,6 @@ ideology_break_2_2_event.1 = {
 		}
 	}
 }
-
 ideology_break_2_2_event.2 = {
 	type = country_event
 	title = ideology_break_2_2_event.2.t
@@ -157,7 +156,6 @@ ideology_break_2_2_event.2 = {
 		}
 	}
 }
-
 ideology_break_2_2_event.3 = {
 	type = country_event
 	title = ideology_break_2_2_event.3.t
@@ -174,7 +172,6 @@ ideology_break_2_2_event.3 = {
 		default_option = yes
 	}
 }
-
 ideology_break_2_2_event.4 = {
 	type = country_event
 	title = ideology_break_2_2_event.4.t
@@ -198,7 +195,6 @@ ideology_break_2_2_event.4 = {
 		}
 	}
 }
-
 ideology_break_2_2_event.5 = {
 	type = country_event
 	title = ideology_break_2_2_event.5.t
@@ -215,7 +211,6 @@ ideology_break_2_2_event.5 = {
 		default_option = yes
 	}
 }
-
 ideology_break_2_2_event.6 = {
 	type = country_event
 	title = ideology_break_2_2_event.6.t
@@ -235,7 +230,6 @@ ideology_break_2_2_event.6 = {
 		}
 	}
 }
-
 ideology_break_2_2_event.7 = {
 	type = country_event
 	title = ideology_break_2_2_event.7.t

@@ -22,7 +22,6 @@ building_port = {
 		}
 	}
 }
-
 building_government_administration = {
 	building_group = bg_bureaucracy
 	city_type = city
@@ -30,7 +29,6 @@ building_government_administration = {
 	unlocking_technologies = {
 		tech_bureaucracy
 	}
-
 	should_auto_expand = {
 		occupancy >= 0.8
 		OR = {
@@ -40,7 +38,6 @@ building_government_administration = {
 			}
 		}
 	}
-
 	production_method_groups = {
 		pmg_base_building_government_administration
 		pmg_government_administration_bureaucrat_professionalism
@@ -49,7 +46,6 @@ building_government_administration = {
 	texture = "gfx/interface/icons/building_icons/building_government_administration.dds"
 	required_construction = construction_cost_medium
 }
-
 building_university = {
 	building_group = bg_technology
 	city_type = city
@@ -66,7 +62,6 @@ building_university = {
 	texture = "gfx/interface/icons/building_icons/building_university.dds"
 	required_construction = construction_cost_medium
 }
-
 building_skyscraper = {
 	building_group = bg_skyscraper
 	city_type = city

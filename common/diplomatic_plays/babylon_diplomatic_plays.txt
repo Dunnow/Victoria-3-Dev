@@ -1,25 +1,29 @@
 ﻿dp_babylon_unify_america = {
 	war_goal = annex_country
 	requires_interest_marker = no
-	
 	texture = "gfx/interface/icons/war_goals/annex_country.dds"
-	
 	selectable_in_lens = {
 		OR = {
 			country_has_primary_culture = cu:yankee
 			country_has_primary_culture = cu:dixie
 		}
 	}
-	
 	possible = {
-		NOT = { is_country_type = decentralized }
+		NOT = {
+			is_country_type = decentralized
+		}
 		aggressive_diplomatic_plays_permitted = yes
-		NOT = { is_subject_of = scope:target_country }
+		NOT = {
+			is_subject_of = scope:target_country
+		}
 		has_technology_researched = nationalism
-		
 		scope:target_country = {
-			NOT = { is_subject_of = root }
-			NOT = { is_country_type = decentralized }
+			NOT = {
+				is_subject_of = root
+			}
+			NOT = {
+				is_country_type = decentralized
+			}
 			country_is_in_north_america = yes
 			OR = {
 				country_has_primary_culture = cu:yankee
@@ -29,18 +33,20 @@
 			}
 		}
 	}
-	
-	on_weekly_pulse = {}
-	
-	on_war_begins = {}
+	on_weekly_pulse = {
 
-	on_war_end = {}
+	}
+	on_war_begins = {
+
+	}
+	on_war_end = {
+
+	}
 }
-
 dp_babylon_customs_union = {
 	war_goal = humiliation
 	initiator_can_add_war_goals = no
-    target_can_add_war_goals = no
+	target_can_add_war_goals = no
 	texture = "gfx/interface/icons/war_goals/open_market.dds"
 	possible = {
 		always = no
@@ -49,7 +55,7 @@ dp_babylon_customs_union = {
 		#Ensures this diplo play never reaches war directly
 		#Should be diplo play scope
 		if = {
-			limit = { 
+			limit = {
 				escalation >= 60
 			}
 			initiator = {
@@ -67,123 +73,129 @@ dp_babylon_customs_union = {
 		}
 	}
 	on_war_begins = {
+
 	}
 	on_war_end = {
+
 	}
 }
-
 dp_babylon_colonial_war = {
 	war_goal = humiliation
 	texture = "gfx/interface/icons/war_goals/humiliation.dds"
 	possible = {
 		has_law = law_type:law_imperialism
-		NOT = { is_country_type = decentralized }
+		NOT = {
+			is_country_type = decentralized
+		}
 		babylon_aggressive_diplomatic_plays_permitted = yes
-		NOT = { is_subject_of = scope:target_country }
+		NOT = {
+			is_subject_of = scope:target_country
+		}
 		scope:target_country = {
-			NOT = { is_country_type = decentralized }
-			NOT = { is_subject_of = root }
+			NOT = {
+				is_country_type = decentralized
+			}
+			NOT = {
+				is_subject_of = root
+			}
 			is_country_type = recognized
 		}
 		custom_tooltip = {
 			text = DIPLO_ACTION_RELATIONS_CORDIAL_OR_GREATER_NOT
 			scope:target_country.relations:root < relations_threshold:cordial
-		}				
+		}
 	}
 }
-
-
 dp_babylon_great_war = {
 	requires_interest_marker = no
 	war_goal = humiliation
 	texture = "gfx/interface/icons/war_goals/great_war.dds"
 	possible = {
-		NOT = { is_country_type = decentralized }
+		NOT = {
+			is_country_type = decentralized
+		}
 		babylon_aggressive_diplomatic_plays_permitted = yes
-		NOT = { is_subject_of = scope:target_country }
-		has_technology_researched = multilateral_alliances 
+		NOT = {
+			is_subject_of = scope:target_country
+		}
+		has_technology_researched = multilateral_alliances
 		has_global_variable = trench_works_invented_global
-
 		scope:target_country = {
-			NOT = { is_country_type = decentralized }
-			NOT = { is_subject_of = root }
-			has_technology_researched = multilateral_alliances 
+			NOT = {
+				is_country_type = decentralized
+			}
+			NOT = {
+				is_subject_of = root
+			}
+			has_technology_researched = multilateral_alliances
 		}
 		custom_tooltip = {
 			text = DIPLO_ACTION_RELATIONS_CORDIAL_OR_GREATER_NOT
 			scope:target_country.relations:root < relations_threshold:cordial
 		}
 	}
-
 	on_weekly_pulse = {
 		every_scope_play_involved = {
 			root.war = {
 				if = {
 					limit = {
-					    has_war_support = {
-					        target = prev
-					        value < 0
-					    }
+						has_war_support = {
+							target = prev
+							value < 0
+						}
 					}
-
-					add_war_war_support = { 
-						target = prev 
+					add_war_war_support = {
+						target = prev
 						value = 10
 					}
 				}
 			}
 		}
 	}
-
 	on_war_begins = {
-	}
 
+	}
 	on_war_end = {
+
 	}
 }
-
-dp_transfer_liberate_subject= {
+dp_transfer_liberate_subject = {
 	war_goal = liberate_subject
-
 	texture = "gfx/interface/icons/war_goals/humiliation.dds"
-
 	selectable_in_lens = {
 		always = no
 	}
-
 	#possible = {
 	#	always = yes
 	#}
-
 	on_weekly_pulse = {
-		
+
 	}
+	on_war_begins = {
 
-	on_war_begins = {}
+	}
+	on_war_end = {
 
-	on_war_end = {}
+	}
 }
-
-dp_transfer_annex= {
+dp_transfer_annex = {
 	war_goal = annex_country
-
 	texture = "gfx/interface/icons/war_goals/annex_country.dds"
-
 	selectable_in_lens = {
 		always = no
 	}
-
 	#possible = {
 	#	always = yes
 	#}
-
 	on_weekly_pulse = {
 		if = {
 			limit = {
 				escalation >= 60
-				Not = { 
+				Not = {
 					any_scope_play_involved = {
-						NOT = {this = prev.target}
+						NOT = {
+							this = prev.target
+						}
 						is_diplomatic_play_enemy_of = prev.initiator
 					}
 				}
@@ -197,35 +209,33 @@ dp_transfer_annex= {
 					always = yes
 				}
 			}
-
 			ordered_scope_target_ally = {
 				order_by = prestige
-				save_scope_as = new_leader 
+				save_scope_as = new_leader
 			}
-
 			every_scope_target_ally = {
 				limit = {
-					NOT = {this = scope:new_leader}
+					NOT = {
+						this = scope:new_leader
+					}
 				}
 				root.initiator = {
-					add_to_variable_list = { 
-						name = objectors 
+					add_to_variable_list = {
+						name = objectors
 						target = prev
 					}
 				}
 			}
-
 			every_scope_initiator_ally = {
 				root.initiator = {
-					add_to_variable_list = { 
-						name = supporters 
+					add_to_variable_list = {
+						name = supporters
 						target = prev
 					}
 				}
 			}
 			end_play = yes
-
-			scope:new_leader = { 
+			scope:new_leader = {
 				create_diplomatic_play = {
 					name = dp_transfer_liberate_subject_name
 					target_country = root.target
@@ -233,7 +243,7 @@ dp_transfer_annex= {
 					add_initiator_backers = {
 						root.target
 					}
-					add_war_goal = { 
+					add_war_goal = {
 						holder = root.initiator
 						type = annex_country
 						target_country = root.target
@@ -242,8 +252,10 @@ dp_transfer_annex= {
 			}
 		}
 	}
+	on_war_begins = {
 
-	on_war_begins = {}
+	}
+	on_war_end = {
 
-	on_war_end = {}
+	}
 }

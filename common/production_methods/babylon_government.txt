@@ -20,7 +20,6 @@
 		elevator
 	}
 }
-
 pm_age_of_sail_military_port = {
 	texture = "gfx/interface/icons/production_method_icons/battlefleet_tactics.dds"
 	unlocking_technologies = {
@@ -43,7 +42,6 @@ pm_age_of_sail_military_port = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-
 pm_military_steam_era_port = {
 	texture = "gfx/interface/icons/production_method_icons/battlefleet_tactics.dds"
 	unlocking_technologies = {
@@ -67,7 +65,6 @@ pm_military_steam_era_port = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-
 pm_military_port_turn_of_century = {
 	texture = "gfx/interface/icons/production_method_icons/battlefleet_tactics.dds"
 	unlocking_technologies = {
@@ -91,7 +88,6 @@ pm_military_port_turn_of_century = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-
 pm_modern_military_port = {
 	texture = "gfx/interface/icons/production_method_icons/battlefleet_tactics.dds"
 	unlocking_technologies = {
@@ -115,7 +111,6 @@ pm_modern_military_port = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-
 pm_patriotic_academia = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_aristocrats.dds"
 	unlocking_laws = {
@@ -130,11 +125,9 @@ pm_patriotic_academia = {
 		}
 	}
 }
-
 pm_no_academic_focus = {
 	texture = "gfx/interface/icons/production_method_icons/unused/no_philosophy_dept.dds"
 }
-
 pm_military_academy = {
 	texture = "gfx/interface/icons/production_method_icons/unused/military_academy.dds"
 	building_modifiers = {
@@ -155,7 +148,6 @@ pm_military_academy = {
 		}
 	}
 }
-
 pm_research_institute = {
 	texture = "gfx/interface/icons/production_method_icons/unused/engineering_university.dds"
 	building_modifiers = {
@@ -177,7 +169,6 @@ pm_research_institute = {
 		}
 	}
 }
-
 pm_liberal_arts = {
 	texture = "gfx/interface/icons/production_method_icons/unused/social_science.dds"
 	building_modifiers = {
@@ -199,7 +190,6 @@ pm_liberal_arts = {
 		}
 	}
 }
-
 pm_general_studies = {
 	texture = "gfx/interface/icons/production_method_icons/unused/lightbulbs.dds"
 	building_modifiers = {
@@ -224,11 +214,9 @@ pm_general_studies = {
 		}
 	}
 }
-
 pm_no_initiatives = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_aristocrats.dds"
 }
-
 pm_bookshops = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
 	unlocking_technologies = {
@@ -256,7 +244,6 @@ pm_bookshops = {
 		}
 	}
 }
-
 pm_local_libraries = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
 	unlocking_technologies = {
@@ -284,7 +271,6 @@ pm_local_libraries = {
 		}
 	}
 }
-
 pm_public_libraries = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
 	unlocking_technologies = {

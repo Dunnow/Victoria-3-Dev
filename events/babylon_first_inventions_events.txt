@@ -36,7 +36,6 @@ first_inventions_events.1 = {
 		name = first_inventions_events.1.far_off
 	}
 }
-
 first_inventions_events.2 = {
 	#combustion_engine discovered by X
 	type = country_event
@@ -74,7 +73,6 @@ first_inventions_events.2 = {
 		name = first_inventions_events.2.far_off
 	}
 }
-
 first_inventions_events.3 = {
 	type = country_event
 	event_image = {
@@ -117,7 +115,6 @@ first_inventions_events.3 = {
 		}
 	}
 }
-
 first_inventions_events.4 = {
 	#telephone discovered by X
 	type = country_event
@@ -154,7 +151,6 @@ first_inventions_events.4 = {
 		name = first_inventions_events.4.far_off
 	}
 }
-
 first_inventions_events.5 = {
 	type = country_event
 	event_image = {
@@ -197,7 +193,6 @@ first_inventions_events.5 = {
 		}
 	}
 }
-
 first_inventions_events.6 = {
 	#telephone discovered by X
 	type = country_event
@@ -235,7 +230,6 @@ first_inventions_events.6 = {
 		name = first_inventions_events.6.far_off
 	}
 }
-
 first_inventions_events.7 = {
 	type = country_event
 	event_image = {
@@ -278,7 +272,6 @@ first_inventions_events.7 = {
 		}
 	}
 }
-
 first_inventions_events.8 = {
 	#Radios discovered by X
 	type = country_event
@@ -316,7 +309,6 @@ first_inventions_events.8 = {
 		name = first_inventions_events.8.far_off
 	}
 }
-
 first_inventions_events.9 = {
 	type = country_event
 	event_image = {
@@ -359,7 +351,6 @@ first_inventions_events.9 = {
 		}
 	}
 }
-
 first_inventions_events.10 = {
 	#Dreadnoughts discovered by X
 	type = country_event
@@ -397,7 +388,6 @@ first_inventions_events.10 = {
 		name = first_inventions_events.10.far_off
 	}
 }
-
 first_inventions_events.11 = {
 	type = country_event
 	event_image = {
@@ -440,7 +430,6 @@ first_inventions_events.11 = {
 		}
 	}
 }
-
 first_inventions_events.12 = {
 	#Oil (from the ground) discovered by X
 	type = country_event
@@ -478,7 +467,6 @@ first_inventions_events.12 = {
 		name = first_inventions_events.12.far_off
 	}
 }
-
 first_inventions_events.13 = {
 	type = country_event
 	event_image = {
@@ -521,7 +509,6 @@ first_inventions_events.13 = {
 		}
 	}
 }
-
 first_inventions_events.14 = {
 	#First skyscraper built by X
 	type = country_event
@@ -555,16 +542,15 @@ first_inventions_events.14 = {
 	}
 	option = {
 		trigger = {
-			OR = { 
-				has_technology_researched = reinforced_concrete 
-				has_technology_researched = steel_frame_buildings 
+			OR = {
+				has_technology_researched = reinforced_concrete
+				has_technology_researched = steel_frame_buildings
 			}
 		}
 		name = first_inventions_events.14.close
 		default_option = yes
 	}
 }
-
 first_inventions_events.15 = {
 	#mobile_armor invented by X
 	type = country_event
@@ -602,7 +588,6 @@ first_inventions_events.15 = {
 		name = first_inventions_events.15.far_off
 	}
 }
-
 first_inventions_events.16 = {
 	type = country_event
 	event_image = {
@@ -645,8 +630,6 @@ first_inventions_events.16 = {
 		}
 	}
 }
-
-
 first_inventions_events.17 = {
 	type = country_event
 	event_image = {

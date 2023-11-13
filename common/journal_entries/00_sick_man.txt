@@ -46,7 +46,6 @@
 	weight = 10000
 	should_be_pinned_by_default = yes
 }
-
 # Bureaucractic Reform
 je_sick_man_bureaucracy = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
@@ -75,7 +74,7 @@ je_sick_man_bureaucracy = {
 	on_monthly_pulse = {
 		random_events = {
 			100 = 0
-			10 = tanzimat_events.9			# Land registration resisted
+			10 = tanzimat_events.9	# Land registration resisted
 		}
 	}
 	invalid = {
@@ -87,7 +86,6 @@ je_sick_man_bureaucracy = {
 	transferable = no
 	weight = 5000
 }
-
 # Economic Reform
 je_sick_man_economy = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
@@ -121,7 +119,6 @@ je_sick_man_economy = {
 	transferable = no
 	weight = 5001
 }
-
 # Army Reform
 je_sick_man_army = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
@@ -156,7 +153,7 @@ je_sick_man_army = {
 	}
 	on_monthly_pulse = {
 		events = {
-			tanzimat_events.10			# Tanzimat Draft Question
+			tanzimat_events.10	# Tanzimat Draft Question
 		}
 	}
 	invalid = {
@@ -168,7 +165,6 @@ je_sick_man_army = {
 	transferable = no
 	weight = 5002
 }
-
 # Naval Reform
 je_sick_man_navy = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
@@ -209,7 +205,6 @@ je_sick_man_navy = {
 	transferable = no
 	weight = 5003
 }
-
 # Kurdish Question
 je_sick_man_liberal_kurdish = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
@@ -294,7 +289,6 @@ je_sick_man_liberal_kurdish = {
 	weight = 5004
 	progressbar = yes
 }
-
 je_sick_man_absolute_kurdish = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	immediate = {
@@ -364,7 +358,6 @@ je_sick_man_absolute_kurdish = {
 	weight = 5004
 	progressbar = yes
 }
-
 # Nationalism
 je_sick_man_liberal_separatism = {
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
@@ -480,7 +473,7 @@ je_sick_man_liberal_separatism = {
 		}
 		random_events = {
 			100 = 0
-			10 = tanzimat_events.5			# Paranoia Event
+			10 = tanzimat_events.5	# Paranoia Event
 		}
 	}
 	current_value = {
@@ -499,7 +492,6 @@ je_sick_man_liberal_separatism = {
 	weight = 5005
 	progressbar = yes
 }
-
 je_sick_man_absolute_separatism = {
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 	complete = {
@@ -554,7 +546,7 @@ je_sick_man_absolute_separatism = {
 	on_monthly_pulse = {
 		random_events = {
 			100 = 0
-			10 = tanzimat_events.5			# Paranoia Event
+			10 = tanzimat_events.5	# Paranoia Event
 		}
 	}
 	invalid = {
@@ -566,7 +558,6 @@ je_sick_man_absolute_separatism = {
 	transferable = no
 	weight = 5005
 }
-
 # Literacy and Universities
 je_sick_man_liberal_education = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
@@ -613,7 +604,6 @@ je_sick_man_liberal_education = {
 	progressbar = yes
 	remove_modifier ?= imbalanced_education
 }
-
 je_sick_man_absolute_education = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	complete = {
@@ -659,7 +649,6 @@ je_sick_man_absolute_education = {
 	progressbar = yes
 	remove_modifier ?= imbalanced_education
 }
-
 # Liberalism
 je_sick_man_liberal_voting = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
@@ -739,7 +728,6 @@ je_sick_man_liberal_voting = {
 	weight = 5007
 	progressbar = yes
 }
-
 # Secularism
 je_sick_man_liberal_secularism = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
@@ -871,7 +859,6 @@ je_sick_man_liberal_secularism = {
 	transferable = no
 	weight = 5008
 }
-
 # Labor
 je_sick_man_liberal_labor = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
@@ -910,7 +897,6 @@ je_sick_man_liberal_labor = {
 	transferable = no
 	weight = 5009
 }
-
 # Syria & Egypt
 je_sick_man_syria = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
@@ -986,7 +972,6 @@ je_sick_man_syria = {
 	transferable = no
 	weight = 5007
 }
-
 je_sick_man_egypt = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	complete = {
@@ -1031,7 +1016,6 @@ je_sick_man_egypt = {
 	transferable = no
 	weight = 5008
 }
-
 # Islamism
 je_sick_man_absolute_islam = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"

@@ -2,7 +2,6 @@
 	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
 	is_default = yes
 	building_modifiers = {
-
 		level_scaled = {
 			building_employment_soldiers_add = 970
 			building_employment_officers_add = 30
@@ -10,7 +9,6 @@
 		}
 	}
 }
-
 pm_general_training = {
 	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
 	is_default = yes
@@ -18,7 +16,6 @@ pm_general_training = {
 		line_infantry
 	}
 	building_modifiers = {
-
 		level_scaled = {
 			building_employment_soldiers_add = 950
 			building_employment_officers_add = 50
@@ -26,14 +23,12 @@ pm_general_training = {
 		}
 	}
 }
-
 pm_advanced_tactics_training = {
 	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
 	unlocking_technologies = {
 		general_staff
 	}
 	building_modifiers = {
-
 		level_scaled = {
 			building_employment_soldiers_add = 900
 			building_employment_officers_add = 100
@@ -41,14 +36,12 @@ pm_advanced_tactics_training = {
 		}
 	}
 }
-
 pm_training_streamlining = {
 	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
 	unlocking_technologies = {
 		trench_works
 	}
 	building_modifiers = {
-
 		level_scaled = {
 			building_employment_soldiers_add = 850
 			building_employment_officers_add = 150
@@ -56,7 +49,6 @@ pm_training_streamlining = {
 		}
 	}
 }
-
 pm_nco_incorporation = {
 	texture = "gfx/interface/icons/production_method_icons/nco_incorporation.dds"
 	unlocking_technologies = {
@@ -64,16 +56,15 @@ pm_nco_incorporation = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-		}
 
+		}
 		level_scaled = {
 			building_employment_soldiers_add = 800
 			building_employment_officers_add = 200
 			building_training_rate_add = 22
-		}		
+		}
 	}
 }
-
 pm_mobile_warfare_tactics = {
 	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
 	unlocking_technologies = {
@@ -81,16 +72,15 @@ pm_mobile_warfare_tactics = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-		}
 
+		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
 			building_employment_officers_add = 250
 			building_training_rate_add = 25
-		}		
+		}
 	}
 }
-
 pm_no_organization_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
 	is_default = yes
@@ -102,7 +92,6 @@ pm_no_organization_conscription = {
 		}
 	}
 }
-
 pm_general_training_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
 	is_default = yes
@@ -117,7 +106,6 @@ pm_general_training_conscription = {
 		}
 	}
 }
-
 pm_advanced_tactics_training_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
 	unlocking_technologies = {
@@ -125,7 +113,7 @@ pm_advanced_tactics_training_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-	}	
+	}
 	building_modifiers = {
 		level_scaled = {
 			building_employment_soldiers_add = 900
@@ -134,7 +122,6 @@ pm_advanced_tactics_training_conscription = {
 		}
 	}
 }
-
 pm_training_streamlining_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
 	unlocking_technologies = {
@@ -142,7 +129,7 @@ pm_training_streamlining_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-	}	
+	}
 	building_modifiers = {
 		level_scaled = {
 			building_employment_soldiers_add = 850
@@ -151,7 +138,6 @@ pm_training_streamlining_conscription = {
 		}
 	}
 }
-
 pm_nco_incorporation_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/nco_incorporation.dds"
 	unlocking_technologies = {
@@ -168,7 +154,6 @@ pm_nco_incorporation_conscription = {
 		}
 	}
 }
-
 pm_mobile_warfare_tactics_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
 	unlocking_technologies = {
@@ -176,16 +161,15 @@ pm_mobile_warfare_tactics_conscription = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-		}
 
+		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
 			building_employment_officers_add = 250
 			building_training_rate_add = 25
-		}		
+		}
 	}
 }
-
 pm_no_naval_theory = {
 	texture = "gfx/interface/icons/production_method_icons/no_naval_theory.dds"
 	building_modifiers = {
@@ -196,7 +180,6 @@ pm_no_naval_theory = {
 		}
 	}
 }
-
 pm_power_of_the_purse = {
 	texture = "gfx/interface/icons/production_method_icons/power_of_the_purse.dds"
 	unlocking_technologies = {
@@ -208,14 +191,12 @@ pm_power_of_the_purse = {
 			building_employment_officers_add = 125
 			building_training_rate_add = 3.5
 		}
-
 		unscaled = {
 			unit_morale_loss_mult = -0.1
 			unit_morale_damage_mult = 0.1
 		}
 	}
 }
-
 pm_jeune_ecole = {
 	texture = "gfx/interface/icons/production_method_icons/jeune_ecole.dds"
 	unlocking_technologies = {
@@ -227,14 +208,12 @@ pm_jeune_ecole = {
 			building_employment_officers_add = 150
 			building_training_rate_add = 4
 		}
-
 		unscaled = {
 			unit_morale_loss_mult = -0.2
 			unit_morale_damage_mult = 0.2
 		}
 	}
 }
-
 pm_sea_lane_strategies = {
 	texture = "gfx/interface/icons/production_method_icons/mahanian_thought.dds"
 	unlocking_technologies = {
@@ -248,14 +227,12 @@ pm_sea_lane_strategies = {
 			building_employment_soldiers_add = -75
 			building_employment_officers_add = 75
 		}
-
 		unscaled = {
 			unit_morale_loss_mult = -0.3
 			unit_morale_damage_mult = 0.3
 		}
 	}
 }
-
 pm_battlefleet_tactics = {
 	texture = "gfx/interface/icons/production_method_icons/battlefleet_tactics.dds"
 	unlocking_technologies = {
@@ -267,7 +244,6 @@ pm_battlefleet_tactics = {
 			building_employment_officers_add = 200
 			building_training_rate_add = 5
 		}
-
 		unscaled = {
 			unit_morale_loss_mult = -0.4
 			unit_morale_damage_mult = 0.4

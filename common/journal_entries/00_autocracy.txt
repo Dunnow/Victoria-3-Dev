@@ -38,8 +38,8 @@
 		}
 		random_events = {
 			10 = 0
-			1 = autocracy.2			#Secret Societies event. Punish or let be an IG against authoritarianism - Intelligentsia only?
-			1 = autocracy.3			#Blessed are the Meek. Extra loyalists/less radicals from SoL changes
+			1 = autocracy.2	#Secret Societies event. Punish or let be an IG against authoritarianism - Intelligentsia only?
+			1 = autocracy.3	#Blessed are the Meek. Extra loyalists/less radicals from SoL changes
 		}
 	}
 	complete = {
@@ -59,7 +59,7 @@
 		}
 	}
 	fail = {
-			is_autocratic = no
+		is_autocratic = no
 	}
 	current_value = {
 		value = root.var:autocracy_var

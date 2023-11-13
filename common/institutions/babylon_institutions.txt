@@ -5,7 +5,6 @@
 		political_movement_radicalism_mult = -0.05
 	}
 }
-
 institution_multiculturalism = {
 	icon = "gfx/interface/icons/institution_icons/home_affairs.dds"
 	background_texture = "gfx/interface/illustrations/institutions/home_affairs.dds"
@@ -19,7 +18,6 @@ institution_multiculturalism = {
 		state_assimilation_mult = 0.025
 	}
 }
-
 institution_citizenship = {
 	icon = "gfx/interface/icons/institution_icons/citizenship_institution.dds"
 	background_texture = "gfx/interface/illustrations/institutions/police.dds"

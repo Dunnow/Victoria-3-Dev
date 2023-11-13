@@ -80,7 +80,6 @@
 		base = 0
 	}
 }
-
 consider_true_neutral_status = {
 	is_shown = {
 		#Show this decision if theres any applicants for true neutral status

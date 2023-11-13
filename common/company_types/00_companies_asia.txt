@@ -1,17 +1,13 @@
 ﻿# Imperial Arsenal; Babylon - replaced navy defense
 company_imperial_arsenal = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/imperial_arsenal.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_military_shipyards
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_anatolia
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_EASTERN_THRACE
@@ -23,31 +19,24 @@ company_imperial_arsenal = {
 		}
 		has_technology_researched = hydraulic_cranes
 	}
-	
 	prosperity_modifier = {
 		unit_convoy_requirements_mult = -0.10
 		country_military_tech_spread_mult = 0.05
 	}
-	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Ottoman Tobacco Company, later Tekel
 company_ottoman_tobacco_regie = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/ottoman_tobacco_regie.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_tobacco_plantation
 	}
-	
 	potential = {
 		country_has_primary_culture = cu:turkish
 	}
-	
 	possible = {
 		any_scope_state = {
 			is_incorporated = yes
@@ -62,31 +51,24 @@ company_ottoman_tobacco_regie = {
 			is_country_type = unrecognized
 		}
 	}
-	
 	prosperity_modifier = {
 		country_production_tech_spread_mult = 0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Allatini Mills
 company_allatini_mills = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/allatini_mills.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_wheat_farm
 		building_rye_farm
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_balkans
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_MACEDONIA
@@ -104,34 +86,27 @@ company_allatini_mills = {
 			is_country_type = unrecognized
 		}
 	}
-	
 	prosperity_modifier = {
 		building_food_industry_throughput_add = 0.1
 		state_radicals_from_discrimination_mult = -0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Chemins de fer Orientaux
 company_orient_express = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/chemins_de_fer_orientaux.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_railway
 	}
-	
 	potential = {
 		OR = {
 			has_interest_marker_in_region = region_anatolia
 			has_interest_marker_in_region = region_balkans
 		}
 	}
-	
 	possible = {
 		owns_entire_state_region = STATE_EASTERN_THRACE
 		any_scope_state = {
@@ -145,33 +120,26 @@ company_orient_express = {
 			is_country_type = unrecognized
 		}
 	}
-	
 	prosperity_modifier = {
 		country_prestige_mult = 0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Great Indian Peninsula Railway
 company_great_indian_railway = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/india_great_indian_peninsula_railway.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_railway
 	}
-	
 	potential = {
 		OR = {
 			has_interest_marker_in_region = region_south_india
 			has_interest_marker_in_region = region_north_india
 		}
 	}
-	
 	possible = {
 		any_scope_state = {
 			OR = {
@@ -183,32 +151,25 @@ company_great_indian_railway = {
 			count >= 6
 		}
 	}
-	
 	prosperity_modifier = {
 		state_infrastructure_from_population_add = 0.5
 		state_infrastructure_from_population_max_add = 20
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Tata
 company_tata = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/india_tata.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_textile_mills
 		building_steel_mills
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_south_india
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_BOMBAY
@@ -222,32 +183,25 @@ company_tata = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		building_construction_sector_throughput_add = 0.05
 		country_max_weekly_construction_progress_add = 10
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Sunhwaguk
 company_sunhwaguk = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/korea_sunhwaguk.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_tobacco_plantation
 		building_rice_farm
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_manchuria
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = {
@@ -261,30 +215,23 @@ company_sunhwaguk = {
 		}
 		has_technology_researched = central_planning
 	}
-	
 	prosperity_modifier = {
 		country_tech_spread_mult = 0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Nam Định Textile Factory
 company_nam_dinh = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/vietnam_nam_dinh.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_textile_mills
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_indochina
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_TONKIN
@@ -296,30 +243,23 @@ company_nam_dinh = {
 		}
 		has_technology_researched = corporate_charters
 	}
-	
 	prosperity_modifier = {
 		country_tech_spread_mult = 0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Imperial Tobacco Corporation of Persia, Limited
 company_imperial_tobacco = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/imperial_tobacco.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_tobacco_plantation
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_persia
 	}
-	
 	possible = {
 		any_scope_state = {
 			region = sr:region_persia
@@ -332,31 +272,24 @@ company_imperial_tobacco = {
 		}
 		has_technology_researched = corporate_charters
 	}
-	
 	prosperity_modifier = {
 		country_tech_spread_mult = 0.2
 		interest_group_ig_rural_folk_approval_add = -2
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # San Miguel
 company_san_miguel = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/manila_la_fabrica_de_cerveza_san_miguel.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_food_industry
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_indonesia
 	}
-	
 	possible = {
 		any_scope_state = {
 			region = sr:region_indonesia
@@ -368,30 +301,23 @@ company_san_miguel = {
 		}
 		has_technology_researched = corporate_charters
 	}
-	
 	prosperity_modifier = {
 		state_radicals_from_sol_change_mult = -0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # William Sandford Limited
 company_william_sandford = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/william_sandford_limited.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_steel_mills
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_oceania
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_NEW_SOUTH_WALES
@@ -403,30 +329,23 @@ company_william_sandford = {
 		}
 		has_technology_researched = bessemer_process
 	}
-	
 	prosperity_modifier = {
 		building_railway_throughput_add = 0.15
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # B.Grimm
 company_b_grimm = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/thailand_b_grimm.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
-		building_rice_farm # aided in irrigation projects
+	building_types = {
+		building_rice_farm	# aided in irrigation projects
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_indochina
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_BANGKOK
@@ -437,14 +356,11 @@ company_b_grimm = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		state_infrastructure_from_population_add = 0.1
 		building_food_industry_throughput_add = 0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-

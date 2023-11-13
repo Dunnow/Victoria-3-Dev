@@ -6,7 +6,6 @@
 		}
 	}
 }
-
 discord_modifier_lvl_1_tooltip = {
 	scope = country
 	effect = {
@@ -15,7 +14,6 @@ discord_modifier_lvl_1_tooltip = {
 		}
 	}
 }
-
 discord_modifier_lvl_2_tooltip = {
 	scope = country
 	effect = {
@@ -24,7 +22,6 @@ discord_modifier_lvl_2_tooltip = {
 		}
 	}
 }
-
 discord_modifier_lvl_3_tooltip = {
 	scope = country
 	effect = {

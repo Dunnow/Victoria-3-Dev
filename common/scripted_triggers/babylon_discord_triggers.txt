@@ -3,7 +3,6 @@
 		has_variable = is_discord_implosion_country
 	}
 }
-
 is_discord_religious_internal_calc_active = {
 	OR = {
 		has_law = law_type:law_theocracy
@@ -11,9 +10,8 @@ is_discord_religious_internal_calc_active = {
 		has_law = law_type:law_state_atheism
 	}
 }
-
 is_discord_cultural_internal_calc_active = {
-    NOT = {
-        has_law = law_type:law_true_multicultural
-    }
+	NOT = {
+		has_law = law_type:law_true_multicultural
+	}
 }

@@ -1,7 +1,5 @@
 ﻿bg_command = {
 	parent_group = bg_navy
-
 	infrastructure_usage_per_level = 0.1
-		
 	urbanization = 10
 }

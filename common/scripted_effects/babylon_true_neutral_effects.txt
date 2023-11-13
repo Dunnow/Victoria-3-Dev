@@ -171,7 +171,6 @@
 		}
 	}
 }
-
 babylon_clean_true_neutrality_treaty_je_variables = {
 	#scope: true neutral applicant
 	remove_variable = true_neutral_current_signers_var
@@ -239,7 +238,6 @@ babylon_clean_true_neutrality_treaty_je_variables = {
 		}
 	}
 }
-
 babylon_remove_unsigned_var_APPLICANT = {
 	babylon_remove_unsigned_var_SPECIFIC_slot_APPLICANT = {
 		SPECIFIC = 1
@@ -282,14 +280,12 @@ babylon_remove_unsigned_var_APPLICANT = {
 		APPLICANT = $APPLICANT$
 	}
 }
-
 babylon_remove_unsigned_var_SPECIFIC_slot_APPLICANT = {
 	remove_list_variable = {
 		name = unsigned_country_$SPECIFIC$
 		target = $APPLICANT$
 	}
 }
-
 babylon_true_neutral_sign_APPLICANT = {
 	#scope: signer
 	#$APPLICANT$: true neutral applicant

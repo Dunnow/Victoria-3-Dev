@@ -1,19 +1,15 @@
 ﻿# Ilva
 company_ilva = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/ilva.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_steel_mills
 		building_iron_mine
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_italy
 	}
-	
-	possible = { 
+	possible = {
 		any_scope_state = {
 			state_region = s:STATE_PIEDMONT
 			is_incorporated = yes
@@ -24,34 +20,27 @@ company_ilva = {
 		}
 		has_technology_researched = arc_welding
 	}
-	
 	prosperity_modifier = {
 		building_railway_throughput_add = 0.1
 		building_artillery_foundries_throughput_add = 0.05
 	}
-	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Ansaldo; Babylon - replaced navy/army offense
 company_ansaldo = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/ansaldo.dds"
-	
 	flavored_company = yes
-	
 	building_types = {
 		building_artillery_foundries
 		building_steel_mills
 		building_military_shipyards
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_italy
 	}
-	
-	possible = { 
+	possible = {
 		any_scope_state = {
 			state_region = s:STATE_PIEDMONT
 			is_incorporated = yes
@@ -66,32 +55,25 @@ company_ansaldo = {
 		}
 		has_technology_researched = railways
 	}
-	
 	prosperity_modifier = {
 		building_railway_throughput_add = 0.1
 		interest_group_ig_industrialist_approval_add = 2
 	}
-	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Casa Ricordi
 company_ricordi = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/ricordi.dds"
-	
 	flavored_company = yes
-	
 	building_types = {
 		building_arts_academy
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_italy
 	}
-	
-	possible = { 
+	possible = {
 		any_scope_state = {
 			state_region = s:STATE_LOMBARDY
 			is_incorporated = yes
@@ -101,33 +83,26 @@ company_ricordi = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		country_prestige_mult = 0.15
 		state_loyalists_from_sol_change_mult = 0.05
 	}
-	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # FIAT; Babylon - replaced army offense
 company_fiat = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/fiat.dds"
-	
 	flavored_company = yes
-	
 	building_types = {
 		building_motor_industry
 		building_war_machine_industry
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_italy
 	}
-	
-	possible = { 
+	possible = {
 		any_scope_state = {
 			state_region = s:STATE_PIEDMONT
 			is_incorporated = yes
@@ -141,33 +116,26 @@ company_fiat = {
 		}
 		has_technology_researched = combustion_engine
 	}
-	
 	prosperity_modifier = {
 		military_formation_travel_speed_mult = 0.15
 		interest_group_ig_armed_forces_approval_add = 1
 	}
-	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Stabilimento Tecnico Triestino; Babylon - replaced navy defense
 company_stt = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/stt.dds"
-	
 	flavored_company = yes
-	
 	building_types = {
 		building_shipyards
 		building_military_shipyards
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_italy
 	}
-	
-	possible = { 
+	possible = {
 		any_scope_state = {
 			state_region = s:STATE_ISTRIA
 			is_incorporated = yes
@@ -181,13 +149,11 @@ company_stt = {
 		}
 		has_technology_researched = gantry_cranes
 	}
-	
 	prosperity_modifier = {
 		interest_group_ig_armed_forces_approval_add = 2
 		country_convoys_capacity_mult = 0.05
 	}
-	
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }

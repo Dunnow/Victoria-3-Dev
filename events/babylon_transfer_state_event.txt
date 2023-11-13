@@ -1,32 +1,26 @@
 ﻿namespace = transfer_state_event
-
 transfer_state_event.1 = {
 	type = country_event
 	placement = ROOT
-
 	trigger = {
 		exists = scope:target_country
 	}
-
 	title = transfer_state_event.t
 	desc = transfer_state_event.d
-
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
-
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
 	duration = 3
-
 	immediate = {
 		root = {
 			if = {
 				limit = {
-					NOT = { has_modifier = modifier_transfer_state }
+					NOT = {
+						has_modifier = modifier_transfer_state
+					}
 				}
 				add_modifier = {
 					name = modifier_transfer_state
@@ -35,7 +29,7 @@ transfer_state_event.1 = {
 			}
 		}
 	}
-	option = { 
+	option = {
 		name = transfer_state_event.a
 		trigger = {
 			any_scope_state = {
@@ -43,7 +37,6 @@ transfer_state_event.1 = {
 				owner = root
 			}
 		}
-
 		#random_scope_state = {
 		#	limit = {
 		#		has_decree = decree_transfer_state_mark
@@ -51,7 +44,6 @@ transfer_state_event.1 = {
 		#	}
 		#	save_scope_as = capital 
 		#}
-
 		#create_country = {
 		#	origin = root
 		#	state = scope:capital
@@ -60,7 +52,6 @@ transfer_state_event.1 = {
 		#		activate_law = law_type:law_anarchy
 		#	}
 		#}
-
 		every_scope_state = {
 			limit = {
 				has_decree = decree_transfer_state_mark
@@ -68,14 +59,12 @@ transfer_state_event.1 = {
 			}
 			set_state_owner = scope:target_country
 		}
-
 		#scope:target_country = {
 		#	create_diplomatic_pact = {
 		#		country = scope:capital.owner 
 		#		type = dominion
 		#	}
 		#}
-
 		#scope:target_country = { 
 		#	create_diplomatic_play = {
 		#		name = transfer_state
@@ -91,7 +80,6 @@ transfer_state_event.1 = {
 		#		}
 		#	}
 		#}
-		
 		if = {
 			limit = {
 				has_modifier = modifier_transfer_state
@@ -99,7 +87,7 @@ transfer_state_event.1 = {
 			remove_modifier = modifier_transfer_state
 		}
 	}
-	option = { 
+	option = {
 		default_option = yes
 		name = transfer_state_event.b
 		if = {

@@ -7,7 +7,6 @@
 		law_laissez_faire
 		law_command_economy
 	}
-	
 	on_enact = {
 		if = {
 			limit = {
@@ -28,7 +27,6 @@
 			custom_tooltip = rural_laborers_tu_ig_shift_effect_negative_tt
 		}
 	}
-	
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.5
 		country_military_goods_cost_mult = -0.10
@@ -53,11 +51,9 @@
 			}
 		}
 	}
-
-	can_impose = { 
-		is_subject_of = scope:initiator	
-	} 
-	
+	can_impose = {
+		is_subject_of = scope:initiator
+	}
 	# AI should never try to bring back serfdom
 	ai_will_do = {
 		always = no
@@ -75,7 +71,6 @@
 		}
 	}
 }
-
 law_tenant_farmers = {
 	group = lawgroup_land_reform
 	icon = "gfx/interface/icons/law_icons/tenant_farmers.dds"
@@ -91,7 +86,6 @@ law_tenant_farmers = {
 		law_collectivized_agriculture
 		law_commercialized_agriculture
 	}
-
 	on_enact = {
 		if = {
 			limit = {
@@ -112,7 +106,6 @@ law_tenant_farmers = {
 			custom_tooltip = rural_laborers_tu_ig_shift_effect_negative_tt
 		}
 	}
-
 	pop_support = {
 		value = 0
 		add = {
@@ -145,12 +138,10 @@ law_tenant_farmers = {
 			}
 		}
 	}
-
-	can_impose = { 
-		is_subject_of = scope:initiator	
-	} 
-
-	ai_enact_weight_modifier = { #Petitions
+	can_impose = {
+		is_subject_of = scope:initiator
+	}
+	ai_enact_weight_modifier = {	#Petitions
 		value = 0
 		if = {
 			limit = {
@@ -162,7 +153,6 @@ law_tenant_farmers = {
 		}
 	}
 }
-
 law_commercialized_agriculture = {
 	group = lawgroup_land_reform
 	icon = "gfx/interface/icons/law_icons/commercial_agriculture.dds"
@@ -185,7 +175,6 @@ law_commercialized_agriculture = {
 	unlocking_technologies = {
 		mutual_funds
 	}
-	
 	on_enact = {
 		if = {
 			limit = {
@@ -206,7 +195,6 @@ law_commercialized_agriculture = {
 			custom_tooltip = rural_laborers_tu_ig_shift_effect_tt
 		}
 	}
-
 	pop_support = {
 		value = 0
 		add = {
@@ -234,12 +222,10 @@ law_commercialized_agriculture = {
 			}
 		}
 	}
-
-	can_impose = { 
-		is_subject_of = scope:initiator	
-	} 
-
-	ai_enact_weight_modifier = { #Petitions
+	can_impose = {
+		is_subject_of = scope:initiator
+	}
+	ai_enact_weight_modifier = {	#Petitions
 		value = 0
 		if = {
 			limit = {
@@ -251,7 +237,6 @@ law_commercialized_agriculture = {
 		}
 	}
 }
-
 law_homesteading = {
 	group = lawgroup_land_reform
 	icon = "gfx/interface/icons/law_icons/freeholders.dds"
@@ -268,7 +253,6 @@ law_homesteading = {
 		state_farmers_mortality_mult = -0.05
 		country_farmers_pol_str_mult = 0.25
 	}
-
 	on_enact = {
 		if = {
 			limit = {
@@ -289,7 +273,6 @@ law_homesteading = {
 			custom_tooltip = rural_laborers_tu_ig_shift_effect_negative_tt
 		}
 	}
-
 	pop_support = {
 		value = 0
 		add = {
@@ -319,12 +302,10 @@ law_homesteading = {
 			}
 		}
 	}
-
-	can_impose = { 
-		is_subject_of = scope:initiator	
-	} 
-
-	ai_enact_weight_modifier = { #Petitions
+	can_impose = {
+		is_subject_of = scope:initiator
+	}
+	ai_enact_weight_modifier = {	#Petitions
 		value = 0
 		if = {
 			limit = {
@@ -336,12 +317,10 @@ law_homesteading = {
 		}
 	}
 }
-
 law_collectivized_agriculture = {
 	group = lawgroup_land_reform
 	icon = "gfx/interface/icons/law_icons/collectivized_agriculture.dds"
 	progressiveness = 25
-
 	modifier = {
 		country_bureaucrats_pol_str_mult = 0.25
 		state_tax_capacity_mult = 0.1
@@ -350,7 +329,6 @@ law_collectivized_agriculture = {
 		building_group_bg_agriculture_throughput_add = -0.05
 		building_group_bg_plantations_throughput_add = -0.05
 	}
-
 	on_enact = {
 		custom_tooltip = rural_laborers_tu_ig_shift_effect_tt
 		if = {
@@ -392,12 +370,10 @@ law_collectivized_agriculture = {
 			}
 		}
 	}
-
-	can_impose = { 
-		is_subject_of = scope:initiator	
-	} 
-
-	ai_enact_weight_modifier = { #Petitions
+	can_impose = {
+		is_subject_of = scope:initiator
+	}
+	ai_enact_weight_modifier = {	#Petitions
 		value = 0
 		if = {
 			limit = {
@@ -407,9 +383,8 @@ law_collectivized_agriculture = {
 			}
 			add = 750
 		}
-		
 		if = {
-			limit = { 
+			limit = {
 				has_law = law_type:law_council_republic
 			}
 			add = 250

@@ -27,7 +27,6 @@ infamy_rebalance.1 = {
 		}
 	}
 }
-
 infamy_rebalance.2 = {
 	#debug for increase infamy
 	type = country_event
@@ -36,7 +35,6 @@ infamy_rebalance.2 = {
 		change_infamy = 200
 	}
 }
-
 infamy_rebalance.3 = {
 	#debug for decrease infamy
 	type = country_event
@@ -45,7 +43,6 @@ infamy_rebalance.3 = {
 		change_infamy = -25
 	}
 }
-
 infamy_rebalance.4 = {
 	#negative event for provinces bordering pariahs
 	type = country_event
@@ -145,7 +142,6 @@ infamy_rebalance.4 = {
 		}
 	}
 }
-
 infamy_rebalance.5 = {
 	#Start of anti-pariah coalition
 	type = country_event
@@ -199,7 +195,7 @@ infamy_rebalance.5 = {
 		babylon_aggressive_diplomatic_plays_permitted = yes
 	}
 	immediate = {
-		save_scope_as = root_scope		#For tooltip down the line... stupid, yes.
+		save_scope_as = root_scope	#For tooltip down the line... stupid, yes.
 		save_temporary_scope_value_as = {
 			name = mult_var
 			value = 1.8
@@ -253,7 +249,6 @@ infamy_rebalance.5 = {
 		}
 	}
 }
-
 infamy_rebalance.6 = {
 	#Pariah neighbour gets invited to coalition
 	type = country_event
@@ -313,7 +308,6 @@ infamy_rebalance.6 = {
 		}
 	}
 }
-
 infamy_rebalance.7 = {
 	#cleanup coalition member variables
 	type = country_event
@@ -322,7 +316,6 @@ infamy_rebalance.7 = {
 		remove_variable = pariah_coalition_member
 	}
 }
-
 infamy_rebalance.8 = {
 	#Wartime event for coalition members
 	type = country_event
@@ -394,7 +387,7 @@ infamy_rebalance.8 = {
 				is_incorporated = yes
 			}
 			add_loyalists_in_state = {
-				value = medium_radicals				#5%
+				value = medium_radicals	#5%
 			}
 		}
 		default_option = yes
@@ -444,7 +437,6 @@ infamy_rebalance.8 = {
 		}
 	}
 }
-
 infamy_rebalance.9 = {
 	#Wartime event for pariah
 	type = country_event
@@ -469,6 +461,7 @@ infamy_rebalance.9 = {
 		}
 	}
 	immediate = {
+
 	}
 	option = {
 		#domestic penalty
@@ -492,7 +485,7 @@ infamy_rebalance.9 = {
 				is_incorporated = yes
 			}
 			add_loyalists_in_state = {
-				value = very_large_radicals				#20%
+				value = very_large_radicals	#20%
 			}
 		}
 		default_option = yes
@@ -533,7 +526,6 @@ infamy_rebalance.9 = {
 		}
 	}
 }
-
 infamy_rebalance.10 = {
 	#Economic Sanctions for pariah
 	type = country_event
@@ -578,7 +570,6 @@ infamy_rebalance.10 = {
 		}
 	}
 }
-
 infamy_rebalance.11 = {
 	#Price of Infamy
 	type = country_event
@@ -621,7 +612,6 @@ infamy_rebalance.11 = {
 		}
 	}
 }
-
 infamy_rebalance.12 = {
 	#International isolation
 	type = country_event
@@ -662,7 +652,8 @@ infamy_rebalance.12 = {
 			text = minus_relations_every_country_tt
 			every_country = {
 				limit = {
-					this != root
+					this
+					! = root
 					has_diplomatic_relevance = root
 					NOT = {
 						is_country_type = decentralized
@@ -681,7 +672,6 @@ infamy_rebalance.12 = {
 		}
 	}
 }
-
 infamy_rebalance.13 = {
 	#on_country_released_as_independent = meaning you get an infamy reduction as if you annexed the territory
 	type = country_event
@@ -710,7 +700,6 @@ infamy_rebalance.13 = {
 		}
 	}
 }
-
 infamy_rebalance.14 = {
 	#on_country_released_as_own_subject = meaning you get an infamy reduction as if you subjugated the territory little more than half the annex reduction
 	type = country_event
@@ -739,7 +728,6 @@ infamy_rebalance.14 = {
 		}
 	}
 }
-
 infamy_rebalance.15 = {
 	#Ultimatum for pariah
 	type = country_event
@@ -764,10 +752,10 @@ infamy_rebalance.15 = {
 			}
 			save_scope_as = diplo_play_scope
 		}
-		save_scope_as = root_scope		#used in tooltip... yes I know
+		save_scope_as = root_scope	#used in tooltip... yes I know
 	}
 	option = {
-		name = infamy_rebalance.15.a		#Refuse
+		name = infamy_rebalance.15.a	#Refuse
 		default_option = yes
 		hidden_effect = {
 			every_country = {
@@ -832,7 +820,7 @@ infamy_rebalance.15 = {
 		}
 	}
 	option = {
-		name = infamy_rebalance.15.b		#Agree
+		name = infamy_rebalance.15.b	#Agree
 		scope:diplo_play_scope = {
 			resolve_play_for = scope:initiator_scope
 			end_play = yes
@@ -877,7 +865,6 @@ infamy_rebalance.15 = {
 		}
 	}
 }
-
 infamy_rebalance.16 = {
 	# Double down possibility
 	type = country_event

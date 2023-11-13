@@ -11,7 +11,6 @@
 		localization_key = custom_babylon_treaty_port_not
 	}
 }
-
 babylon_treaty_port_a = {
 	type = state
 	random_valid = no
@@ -25,7 +24,6 @@ babylon_treaty_port_a = {
 		localization_key = custom_babylon_a_treaty_port_not
 	}
 }
-
 babylon_foreign_law_tip = {
 	type = country
 	text = {
@@ -65,30 +63,24 @@ babylon_foreign_law_tip = {
 		localization_key = custom_babylon_law_true_neutrality_tip
 	}
 }
-
-is_naval_invasion = { 
+is_naval_invasion = {
 	type = state
 	random_valid = no
 	log_loc_errors = no
-	
 	text = {
 		trigger = {
 			has_modifier = modifier_incoming_naval_invasion
 		}
 		localization_key = "yes"
 	}
-	
 	text = {
 		localization_key = "no"
 	}
 }
-
-
-naval_invasion_state_tooltip = { 
+naval_invasion_state_tooltip = {
 	type = state
 	random_valid = no
 	log_loc_errors = no
-	
 	text = {
 		trigger = {
 			has_modifier = modifier_incoming_naval_invasion
@@ -149,7 +141,6 @@ babylon_discord_implosion_country = {
 		localization_key = discord_implosion_country_basic
 	}
 }
-
 babylon_discord_current_effect_je = {
 	type = country
 	random_valid = no
@@ -176,7 +167,6 @@ babylon_discord_current_effect_je = {
 		localization_key = babylon_discord_current_effect_je_0
 	}
 }
-
 babylon_discord_have_same_culture_overlord = {
 	type = country
 	random_valid = no
@@ -201,7 +191,6 @@ babylon_discord_have_same_culture_overlord = {
 		localization_key = babylon_discord_have_same_culture_overlord_no
 	}
 }
-
 babylon_discord_have_internal_religious_modifier = {
 	type = country
 	random_valid = no
@@ -225,7 +214,6 @@ babylon_discord_have_internal_religious_modifier = {
 		localization_key = babylon_discord_have_internal_religious_modifier_no
 	}
 }
-
 babylon_discord_external_religious_explainer_extra = {
 	type = country
 	random_valid = no
@@ -251,7 +239,6 @@ babylon_discord_external_religious_explainer_extra = {
 		localization_key = babylon_discord_external_religious_explainer_extra_none
 	}
 }
-
 babylon_discord_external_homeland_nationalism_modifier = {
 	type = country
 	random_valid = no

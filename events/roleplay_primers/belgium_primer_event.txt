@@ -29,7 +29,6 @@ belgium_primer_event.1 = {
 		default_option = yes
 	}
 }
-
 belgium_primer_event.2 = {
 	type = country_event
 	title = belgium_primer_event.2.t
@@ -46,6 +45,7 @@ belgium_primer_event.2 = {
 		# triggered by dual monarchy JE
 	}
 	immediate = {
+
 	}
 	option = {
 		name = belgium_primer_event.1.a
@@ -61,7 +61,6 @@ belgium_primer_event.2 = {
 		default_option = yes
 	}
 }
-
 belgium_primer_event.3 = {
 	type = country_event
 	title = belgium_primer_event.3.t
@@ -78,6 +77,7 @@ belgium_primer_event.3 = {
 		# triggered by dual monarchy JE
 	}
 	immediate = {
+
 	}
 	option = {
 		name = belgium_primer_event.1.a
@@ -93,7 +93,6 @@ belgium_primer_event.3 = {
 		default_option = yes
 	}
 }
-
 belgium_primer_event.4 = {
 	type = country_event
 	title = belgium_primer_event.4.t
@@ -110,6 +109,7 @@ belgium_primer_event.4 = {
 		# triggered by dual monarchy JE
 	}
 	immediate = {
+
 	}
 	option = {
 		name = belgium_primer_event.2.a

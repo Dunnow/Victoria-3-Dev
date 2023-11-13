@@ -8,7 +8,6 @@
 		pm_modern_military_port
 	}
 }
-
 pmg_academic_focus = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
@@ -20,7 +19,6 @@ pmg_academic_focus = {
 		pm_general_studies
 	}
 }
-
 pmg_libraries = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	ai_selection = most_productive
@@ -31,7 +29,6 @@ pmg_libraries = {
 		pm_public_libraries
 	}
 }
-
 pmg_university_academia = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
 	ai_selection = most_productive

@@ -63,7 +63,6 @@ babylon_true_neutral_status.1 = {
 		}
 	}
 }
-
 babylon_true_neutral_status.2 = {
 	#Consider the application of a would-be neutral country...
 	type = country_event

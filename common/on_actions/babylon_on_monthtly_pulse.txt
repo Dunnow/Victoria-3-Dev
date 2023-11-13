@@ -29,8 +29,8 @@
 				value = {
 					add = local_var:total_infrastructure
 					divide = local_var:number_of_states
-					subtract = 50					# counting from 50 infrasturucture
-					divide = 8					# every 8 infrastructure average is 1 land_trade capacity
+					subtract = 50	# counting from 50 infrasturucture
+					divide = 8	# every 8 infrastructure average is 1 land_trade capacity
 				}
 			}
 			if = {
@@ -89,7 +89,8 @@
 			if = {
 				# Only re-add the modifier if the contents (multiplier) are non-zero
 				limit = {
-					babylon_player_construction_bonus_multiplier != 0
+					babylon_player_construction_bonus_multiplier
+					! = 0
 				}
 				add_modifier = {
 					name = player_construction_bonus
@@ -106,11 +107,10 @@
 		}
 	}
 	events = {
-		naval_command_check.1		# checks
-		infamy_rebalance.1		#updates provinces each month
+		naval_command_check.1	# checks
+		infamy_rebalance.1	#updates provinces each month
 	}
 }
-
 #scope = country
 on_babylon_monthly_pulse_store_infamy = {
 	effect = {
@@ -120,7 +120,6 @@ on_babylon_monthly_pulse_store_infamy = {
 		}
 	}
 }
-
 on_babylon_monthly_pulse_allow_incorporation = {
 	effect = {
 		if = {
@@ -158,7 +157,6 @@ on_babylon_monthly_pulse_allow_incorporation = {
 		}
 	}
 }
-
 on_babylon_monthly_pulse_state = {
 	effect = {
 		babylon_arable_land_green_grass_effect = yes

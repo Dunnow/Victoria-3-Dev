@@ -1,7 +1,7 @@
 ﻿calc_subjugation_infamy = {
 	set_variable = {
 		name = infamy_reduction_var
-		value = 3		#initialise
+		value = 3	#initialise
 	}
 	set_variable = {
 		name = population_var
@@ -29,12 +29,10 @@
 		multiply = -1
 	}
 }
-
 remove_subjugation_infamy = {
 	change_infamy = root.var:infamy_reduction_var
 	remove_variable = infamy_reduction_var
 }
-
 remove_infamy_worth_STATE_BASEINFAMY = {
 	#STATE = which state is being evaluated
 	#BASEINFAMY = amount of infamy the wargoal gives, base
@@ -126,7 +124,6 @@ remove_infamy_worth_COUNTRY_BASEINFAMY = {
 	}
 	change_infamy = local_var:infamy_reduction_var
 }
-
 babylon_reset_infamy_to_month_start = {
 	set_local_variable = {
 		name = infamy_difference

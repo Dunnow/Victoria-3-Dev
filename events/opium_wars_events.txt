@@ -1,26 +1,21 @@
 ﻿namespace = opium_wars
-
 # Start event for obsessed country
 opium_wars.1 = {
 	type = country_event
 	placement = ROOT
-
 	title = opium_wars.1.t
 	desc = opium_wars.1.d
 	flavor = opium_wars.1.f
-
 	duration = 3
-
 	event_image = {
 		video = "europenorthamerica_opium_smoker"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	trigger = {
-		NOT = { has_variable = opium_wars_start_var }
+		NOT = {
+			has_variable = opium_wars_start_var
+		}
 		any_primary_culture = {
 			has_cultural_obsession = opium
 		}
@@ -37,13 +32,17 @@ opium_wars.1 = {
 			}
 		}
 		is_subject = no
-		NOT = { has_law = law_type:law_free_trade }
+		NOT = {
+			has_law = law_type:law_free_trade
+		}
 		any_market = {
 			owner = ROOT
 			any_trade_route = {
 				goods = g:opium
 				importer.owner = ROOT
-				NOT = { actor_market.owner = root }
+				NOT = {
+					actor_market.owner = root
+				}
 				actor_market.owner = {
 					country_rank >= rank_value:major_power
 					# Exclude countries that already have a treaty port e.g. Portugal at game start
@@ -61,7 +60,6 @@ opium_wars.1 = {
 			has_modifier = opium_wars_addiction_modifier
 		}
 	}
-
 	immediate = {
 		set_variable = opium_wars_start_var
 		random_primary_culture = {
@@ -76,7 +74,9 @@ opium_wars.1 = {
 				any_trade_route = {
 					goods = g:opium
 					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
+					NOT = {
+						actor_market.owner = root
+					}
 					actor_market.owner = {
 						country_rank >= rank_value:major_power
 						NOT = {
@@ -93,7 +93,9 @@ opium_wars.1 = {
 				limit = {
 					goods = g:opium
 					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
+					NOT = {
+						actor_market.owner = root
+					}
 					actor_market.owner = {
 						country_rank >= rank_value:major_power
 					}
@@ -104,7 +106,6 @@ opium_wars.1 = {
 			}
 		}
 	}
-
 	option = {
 		name = opium_wars.1.a
 		default_option = yes
@@ -117,14 +118,16 @@ opium_wars.1 = {
 			type = je_opium_obsession
 		}
 		# send events to all applicable powers
-			# can't just use the scope because we want to catch multiple countries if we can
+		# can't just use the scope because we want to catch multiple countries if we can
 		random_market = {
 			limit = {
 				owner = ROOT
 				any_trade_route = {
 					goods = g:opium
 					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
+					NOT = {
+						actor_market.owner = root
+					}
 					actor_market.owner = {
 						country_rank >= rank_value:major_power
 					}
@@ -134,7 +137,9 @@ opium_wars.1 = {
 				limit = {
 					goods = g:opium
 					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
+					NOT = {
+						actor_market.owner = root
+					}
 					actor_market.owner = {
 						country_rank >= rank_value:major_power
 					}
@@ -148,7 +153,7 @@ opium_wars.1 = {
 		}
 		add_modifier = {
 			name = opium_wars_addiction_modifier
-			months = long_modifier_time #normal_modifier_time
+			months = long_modifier_time	#normal_modifier_time
 		}
 		ai_chance = {
 			base = 100
@@ -158,37 +163,29 @@ opium_wars.1 = {
 		name = opium_wars.1.b
 		add_modifier = {
 			name = opium_wars_addiction_modifier
-			years = 40 #normal_modifier_time
+			years = 40	#normal_modifier_time
 		}
 		ai_chance = {
 			base = 10
 		}
 	}
 }
-
 # Start event for opium importer
 opium_wars.2 = {
 	type = country_event
 	placement = ROOT
-
 	title = opium_wars.2.t
 	desc = opium_wars.2.d
 	flavor = opium_wars.2.f
-
 	duration = 3
-
 	event_image = {
 		video = "europenorthamerica_opium_smoker"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
-
 	trigger = {
 		# triggered by event
 	}
-
 	immediate = {
 		save_scope_as = opium_wars_aggressor_country
 		random_country = {
@@ -204,8 +201,7 @@ opium_wars.2 = {
 			}
 		}
 	}
-
-	option = { # go opium wars
+	option = {	# go opium wars
 		name = opium_wars.2.a
 		default_option = yes
 		set_variable = opium_wars_aggressor
@@ -220,66 +216,66 @@ opium_wars.2 = {
 		hidden_effect = {
 			every_country = {
 				limit = {
-					NOT = { this = root }
+					NOT = {
+						this = root
+					}
 					OR = {
 						this = scope:opium_wars_target_country
 						has_overlapping_interests = scope:opium_wars_target_country
 						has_overlapping_interests = root
-					}			
+					}
 				}
 				post_notification = opium_wars_british_response_angry
-			}		
-		
+			}
 			scope:opium_wars_target_country = {
 				set_secret_goal = {
 					country = root
-					secret_goal = antagonize			
-				}				
+					secret_goal = antagonize
+				}
 			}
 			set_secret_goal = {
 				country = scope:opium_wars_target_country
 				secret_goal = conquer
-			}		
+			}
 		}
 		ai_chance = {
 			base = 95
 		}
 	}
-	option = { # not interested
+	option = {	# not interested
 		name = opium_wars.2.b
 		change_relations = {
 			country = scope:opium_wars_target_country
 			value = 20
 		}
-		hidden_effect = {	
+		hidden_effect = {
 			every_country = {
 				limit = {
-					NOT = { this = root }
+					NOT = {
+						this = root
+					}
 					OR = {
 						this = scope:opium_wars_target_country
 						has_overlapping_interests = scope:opium_wars_target_country
 						has_overlapping_interests = root
-					}			
+					}
 				}
 				post_notification = opium_wars_british_response_passive
-			}	
-		
+			}
 			set_mutual_secret_goal = {
 				country = scope:opium_wars_target_country
 				secret_goal = befriend
-			}		
-		}		
+			}
+		}
 		ai_chance = {
 			base = 5
 		}
 	}
 }
-
 # Obssessed country succeeds
 opium_wars.3 = {
 	type = country_event
 	placement = ROOT
-
 	title = opium_wars.3.t
 	desc = {
 		first_valid = {
@@ -300,21 +296,15 @@ opium_wars.3 = {
 		}
 	}
 	flavor = opium_wars.3.f
-
 	duration = 3
-
 	event_image = {
 		video = "europenorthamerica_opium_smoker"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	trigger = {
 		# triggered by JE complete
 	}
-
 	immediate = {
 		random_primary_culture = {
 			limit = {
@@ -336,7 +326,9 @@ opium_wars.3 = {
 			}
 		}
 		if = {
-			limit = { has_journal_entry = je_warlord_china }
+			limit = {
+				has_journal_entry = je_warlord_china
+			}
 			post_notification = warlord_china_explosion_point_remove
 			change_variable = {
 				name = china_warlord_explosion
@@ -344,7 +336,6 @@ opium_wars.3 = {
 			}
 		}
 	}
-
 	option = {
 		name = opium_wars.3.a
 		default_option = yes
@@ -357,7 +348,6 @@ opium_wars.3 = {
 		}
 		remove_modifier = opium_wars_addiction_modifier
 	}
-
 	option = {
 		name = opium_wars.3.b
 		every_primary_culture = {
@@ -370,12 +360,10 @@ opium_wars.3 = {
 		remove_modifier = opium_wars_addiction_modifier
 	}
 }
-
 # Obsessed country fails
 opium_wars.4 = {
 	type = country_event
 	placement = ROOT
-
 	title = opium_wars.4.t
 	desc = {
 		first_valid = {
@@ -407,21 +395,15 @@ opium_wars.4 = {
 		}
 	}
 	flavor = opium_wars.4.f
-
 	duration = 3
-
 	event_image = {
 		video = "europenorthamerica_opium_smoker"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	trigger = {
 		# triggered by JE complete
 	}
-
 	immediate = {
 		if = {
 			limit = {
@@ -458,7 +440,9 @@ opium_wars.4 = {
 			}
 		}
 		if = {
-			limit = { has_journal_entry = je_warlord_china }
+			limit = {
+				has_journal_entry = je_warlord_china
+			}
 			set_variable = lost_opium_wars
 			post_notification = warlord_china_explosion_point_add
 			change_variable = {
@@ -467,7 +451,6 @@ opium_wars.4 = {
 			}
 		}
 	}
-
 	option = {
 		name = opium_wars.4.a
 		default_option = yes
@@ -492,12 +475,10 @@ opium_wars.4 = {
 		}
 	}
 }
-
 # Importer country succeeds
 opium_wars.5 = {
 	type = country_event
 	placement = ROOT
-
 	title = opium_wars.5.t
 	desc = {
 		first_valid = {
@@ -524,23 +505,16 @@ opium_wars.5 = {
 			}
 		}
 	}
-
 	flavor = opium_wars.5.f
-
 	duration = 3
-
 	event_image = {
 		video = "europenorthamerica_opium_smoker"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	trigger = {
 		# triggered by JE complete
 	}
-
 	immediate = {
 		random_country = {
 			limit = {
@@ -574,7 +548,6 @@ opium_wars.5 = {
 			}
 		}
 	}
-
 	option = {
 		name = opium_wars.5.a
 		default_option = yes
@@ -584,7 +557,6 @@ opium_wars.5 = {
 		}
 		remove_variable = opium_wars_aggressor
 	}
-
 	option = {
 		name = opium_wars.5.b
 		add_modifier = {
@@ -594,26 +566,19 @@ opium_wars.5 = {
 		remove_variable = opium_wars_aggressor
 	}
 }
-
 # Smugglers caught - triggered by embargo
 opium_wars.6 = {
 	type = country_event
 	placement = ROOT
-
 	title = opium_wars.6.t
 	desc = opium_wars.6.d
 	flavor = opium_wars.6.f
-
 	duration = 3
-
 	event_image = {
 		video = "europenorthamerica_opium_smoker"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	trigger = {
 		is_banning_goods = opium
 		any_country = {
@@ -624,7 +589,6 @@ opium_wars.6 = {
 			has_modifier = returned_opium_smugglers
 		}
 	}
-
 	immediate = {
 		random_country = {
 			limit = {
@@ -633,8 +597,7 @@ opium_wars.6 = {
 			save_scope_as = smuggler_country
 		}
 	}
-
-	option = { # execute the smuggler
+	option = {	# execute the smuggler
 		name = opium_wars.6.a
 		default_option = yes
 		change_relations = {
@@ -646,8 +609,7 @@ opium_wars.6 = {
 			months = short_modifier_time
 		}
 	}
-
-	option = { # negotiate return
+	option = {	# negotiate return
 		name = opium_wars.6.b
 		add_modifier = {
 			name = returned_opium_smugglers
@@ -659,26 +621,19 @@ opium_wars.6 = {
 		}
 	}
 }
-
 # Addiction recovery
 opium_wars.7 = {
 	type = country_event
 	placement = scope:recovry_state
-
 	title = opium_wars.7.t
 	desc = opium_wars.7.d
 	flavor = opium_wars.7.f
-
 	duration = 3
-
 	event_image = {
 		video = "europenorthamerica_opium_smoker"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	trigger = {
 		is_banning_goods = opium
 		has_modifier = opium_wars_addiction_modifier
@@ -694,7 +649,6 @@ opium_wars.7 = {
 			}
 		}
 	}
-
 	immediate = {
 		random_scope_state = {
 			limit = {
@@ -719,7 +673,6 @@ opium_wars.7 = {
 			}
 		}
 	}
-
 	option = {
 		name = opium_wars.7.a
 		default_option = yes
@@ -730,7 +683,6 @@ opium_wars.7 = {
 			}
 		}
 	}
-
 	option = {
 		name = opium_wars.7.b
 		scope:recovry_state = {
@@ -744,26 +696,19 @@ opium_wars.7 = {
 		}
 	}
 }
-
 # Addiction Ravages State
 opium_wars.8 = {
 	type = country_event
 	placement = scope:opium_addiction_state
-
 	title = opium_wars.8.t
 	desc = opium_wars.8.d
 	flavor = opium_wars.8.f
-
 	duration = 3
-
 	event_image = {
 		video = "europenorthamerica_opium_smoker"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	trigger = {
 		any_scope_state = {
 			NOR = {
@@ -776,9 +721,10 @@ opium_wars.8 = {
 				}
 			}
 		}
-		NOT = { is_banning_goods = opium }
+		NOT = {
+			is_banning_goods = opium
+		}
 	}
-
 	immediate = {
 		random_scope_state = {
 			limit = {
@@ -795,11 +741,12 @@ opium_wars.8 = {
 						has_cultural_obsession = opium
 					}
 				}
-				culture = { save_scope_as = opium_addiction_pop }
+				culture = {
+					save_scope_as = opium_addiction_pop
+				}
 			}
 		}
 	}
-
 	option = {
 		name = opium_wars.8.a
 		default_option = yes

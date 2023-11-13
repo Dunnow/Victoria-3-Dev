@@ -1,8 +1,6 @@
 ﻿company_basic_agriculture_1 = {
 	texture = "gfx/interface/icons/company_icons/basic_agriculture.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -10,13 +8,11 @@
 		"dynamic_company_type_society"
 		"dynamic_company_type_fellowship"
 	}
-	
-	building_types = {  
+	building_types = {
 		building_wheat_farm
-		building_rye_farm	
+		building_rye_farm
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -27,17 +23,13 @@
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		building_livestock_ranch_throughput_add = 0.1
-	}	
+	}
 }
-
 company_basic_agriculture_2 = {
 	texture = "gfx/interface/icons/company_icons/basic_agriculture.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -45,14 +37,12 @@ company_basic_agriculture_2 = {
 		"dynamic_company_type_society"
 		"dynamic_company_type_fellowship"
 	}
-	
-	building_types = {  
+	building_types = {
 		building_rice_farm
 		building_millet_farm
 		building_maize_farm
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -64,17 +54,13 @@ company_basic_agriculture_2 = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		building_livestock_ranch_throughput_add = 0.1
-	}	
+	}
 }
-
 company_basic_fabrics = {
 	texture = "gfx/interface/icons/company_icons/basic_fabrics.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -82,13 +68,11 @@ company_basic_fabrics = {
 		"dynamic_company_type_society"
 		"dynamic_company_type_fellowship"
 	}
-	
-	building_types = { 
+	building_types = {
 		building_cotton_plantation
 		building_livestock_ranch
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -99,30 +83,24 @@ company_basic_fabrics = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		building_textile_mills_throughput_add = 0.1
-	}	
+	}
 }
-
 company_basic_colonial_plantations_1 = {
 	texture = "gfx/interface/icons/company_icons/basic_colonial_plantations.dds"
-
 	uses_dynamic_naming = yes
-
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
 		"dynamic_company_type_society"
 		"dynamic_company_type_fellowship"
 	}
-	
-	building_types = {  
-		building_opium_plantation	
+	building_types = {
+		building_opium_plantation
 		building_tea_plantation
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -133,32 +111,25 @@ company_basic_colonial_plantations_1 = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		state_radicals_from_sol_change_mult = -0.05
-	}	
+	}
 }
-
 company_basic_colonial_plantations_2 = {
-
 	texture = "gfx/interface/icons/company_icons/basic_colonial_plantations.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
 		"dynamic_company_type_society"
 		"dynamic_company_type_fellowship"
 	}
-	
 	building_types = {
 		building_coffee_plantation
 		building_sugar_plantation
 		building_tobacco_plantation
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -170,17 +141,13 @@ company_basic_colonial_plantations_2 = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		state_colony_growth_speed_mult = 0.1
-	}	
+	}
 }
-
 company_basic_silk_and_dye = {
 	texture = "gfx/interface/icons/company_icons/basic_silk_and_dye.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -188,13 +155,11 @@ company_basic_silk_and_dye = {
 		"dynamic_company_type_society"
 		"dynamic_company_type_fellowship"
 	}
-	
 	building_types = {
 		building_silk_plantation
 		building_dye_plantation
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -205,17 +170,13 @@ company_basic_silk_and_dye = {
 			}
 		}
 	}
-
 	prosperity_modifier = {
 		country_influence_mult = 0.1
-	}	
+	}
 }
-
 company_basic_wine_and_fruit = {
 	texture = "gfx/interface/icons/company_icons/basic_wine_and_fruit.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -223,13 +184,11 @@ company_basic_wine_and_fruit = {
 		"dynamic_company_type_society"
 		"dynamic_company_type_fellowship"
 	}
-	
 	building_types = {
 		building_vineyard_plantation
 		building_banana_plantation
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -240,17 +199,13 @@ company_basic_wine_and_fruit = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		country_prestige_mult = 0.1
-	}	
+	}
 }
-
 company_basic_fishing = {
 	texture = "gfx/interface/icons/company_icons/basic_fishing.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -260,13 +215,11 @@ company_basic_fishing = {
 		"dynamic_company_type_combine"
 		"dynamic_company_type_guild"
 	}
-	
 	building_types = {
 		building_fishing_wharf
 		building_whaling_station
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -277,18 +230,14 @@ company_basic_fishing = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		country_convoys_capacity_mult = 0.1
 		building_shipyards_throughput_add = 0.05
-	}	
+	}
 }
-
 company_basic_forestry = {
 	texture = "gfx/interface/icons/company_icons/basic_forestry.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -298,13 +247,11 @@ company_basic_forestry = {
 		"dynamic_company_type_combine"
 		"dynamic_company_type_guild"
 	}
-	
 	building_types = {
 		building_logging_camp
 		building_rubber_plantation
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -315,18 +262,14 @@ company_basic_forestry = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
 	}
 }
-
 company_basic_oil = {
 	texture = "gfx/interface/icons/company_icons/basic_oil.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -335,12 +278,10 @@ company_basic_oil = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_oil_rig
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				is_building_type = building_oil_rig
@@ -348,17 +289,13 @@ company_basic_oil = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		state_migration_pull_mult = 0.1
 	}
 }
-
 company_basic_gold_mining = {
 	texture = "gfx/interface/icons/company_icons/basic_gold_mining.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -367,12 +304,10 @@ company_basic_gold_mining = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_gold_mine
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				is_building_type = building_gold_mine
@@ -380,18 +315,14 @@ company_basic_gold_mining = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		country_minting_mult = 0.05
 		state_loyalists_from_sol_change_mult = 0.05
 	}
 }
-
 company_basic_metal_mining = {
 	texture = "gfx/interface/icons/company_icons/basic_metal_mining.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -401,13 +332,11 @@ company_basic_metal_mining = {
 		"dynamic_company_type_combine"
 		"dynamic_company_type_guild"
 	}
-	
 	building_types = {
 		building_iron_mine
 		building_lead_mine
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -418,17 +347,13 @@ company_basic_metal_mining = {
 			}
 		}
 	}
-	
-	prosperity_modifier = {		
+	prosperity_modifier = {
 		building_steel_mills_throughput_add = 0.1
-	}	
+	}
 }
-
 company_basic_mineral_mining = {
 	texture = "gfx/interface/icons/company_icons/basic_mineral_mining.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -438,13 +363,11 @@ company_basic_mineral_mining = {
 		"dynamic_company_type_combine"
 		"dynamic_company_type_guild"
 	}
-	
 	building_types = {
 		building_sulfur_mine
 		building_coal_mine
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				OR = {
@@ -455,17 +378,13 @@ company_basic_mineral_mining = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		building_chemical_plants_throughput_add = 0.1
 	}
 }
-
 company_basic_food = {
 	texture = "gfx/interface/icons/company_icons/basic_food.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -474,12 +393,10 @@ company_basic_food = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_food_industry
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -488,17 +405,13 @@ company_basic_food = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		state_birth_rate_mult = 0.05
 	}
 }
-
 company_basic_paper = {
 	texture = "gfx/interface/icons/company_icons/basic_paper.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -507,12 +420,10 @@ company_basic_paper = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_paper_mills
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -521,17 +432,13 @@ company_basic_paper = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		country_bureaucracy_mult = 0.1
 	}
 }
-
 company_basic_home_goods = {
 	texture = "gfx/interface/icons/company_icons/basic_home_goods.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -540,13 +447,11 @@ company_basic_home_goods = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_glassworks
 		building_furniture_manufacturies
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -558,17 +463,13 @@ company_basic_home_goods = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		state_loyalists_from_sol_change_mult = 0.1
 	}
 }
-
 company_basic_textiles = {
 	texture = "gfx/interface/icons/company_icons/basic_textiles.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -577,12 +478,10 @@ company_basic_textiles = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_textile_mills
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -591,17 +490,13 @@ company_basic_textiles = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		state_radicals_from_sol_change_mult = -0.1
 	}
 }
-
 company_basic_steel = {
 	texture = "gfx/interface/icons/company_icons/basic_steel.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -610,12 +505,10 @@ company_basic_steel = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_steel_mills
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -624,18 +517,14 @@ company_basic_steel = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		state_construction_mult = 0.1
 	}
 }
-
 # Babylon - replaced unit offense
 company_basic_metalworks = {
 	texture = "gfx/interface/icons/company_icons/basic_metalworks.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -644,14 +533,12 @@ company_basic_metalworks = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_tooling_workshops
 		building_arms_industry
 		building_artillery_foundries
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -664,19 +551,15 @@ company_basic_metalworks = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		building_iron_mine_throughput_add = 0.1
 		interest_group_ig_armed_forces_approval_add = 2
 	}
 }
-
 # Babylon - replaced navy offense
 company_basic_shipyards = {
 	texture = "gfx/interface/icons/company_icons/basic_shipyards.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -685,13 +568,11 @@ company_basic_shipyards = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_shipyards
 		building_military_shipyards
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -703,18 +584,14 @@ company_basic_shipyards = {
 			}
 		}
 	}
-
 	prosperity_modifier = {
 		building_logging_camp_throughput_add = 0.1
 		interest_group_ig_industrialists_approval_add = 2
 	}
 }
-
 company_basic_chemicals = {
 	texture = "gfx/interface/icons/company_icons/basic_chemicals.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -723,13 +600,11 @@ company_basic_chemicals = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_chemical_plants
 		building_synthetics_plants
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -741,17 +616,13 @@ company_basic_chemicals = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		unit_supply_consumption_mult = -0.05
 	}
 }
-
 company_basic_motors = {
 	texture = "gfx/interface/icons/company_icons/basic_motors.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -760,13 +631,11 @@ company_basic_motors = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_motor_industry
 		building_war_machine_industry
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -778,18 +647,14 @@ company_basic_motors = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		military_formation_travel_speed_mult = 0.1
 	}
 }
-
 # Babylon - replaced unit defense
 company_basic_munitions = {
 	texture = "gfx/interface/icons/company_icons/basic_munitions.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -798,13 +663,11 @@ company_basic_munitions = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_munition_plants
 		building_explosives_factory
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
@@ -816,18 +679,14 @@ company_basic_munitions = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		interest_group_ig_armed_forces_approval_add = 2
 		country_military_goods_cost_mult = -0.1
 	}
 }
-
 company_basic_electrics = {
 	texture = "gfx/interface/icons/company_icons/basic_munitions.dds"
-	
 	uses_dynamic_naming = yes
-	
 	dynamic_company_type_names = {
 		"dynamic_company_type_company"
 		"dynamic_company_type_consortium"
@@ -836,12 +695,10 @@ company_basic_electrics = {
 		"dynamic_company_type_syndicate"
 		"dynamic_company_type_combine"
 	}
-	
 	building_types = {
 		building_electrics_industry
 	}
-
-	possible = { 
+	possible = {
 		any_scope_state = {
 			any_scope_building = {
 				is_building_type = building_electrics_industry
@@ -849,7 +706,6 @@ company_basic_electrics = {
 			}
 		}
 	}
-	
 	prosperity_modifier = {
 		building_power_plant_throughput_add = 0.1
 	}

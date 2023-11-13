@@ -23,7 +23,6 @@
 	weight = 100
 	should_be_pinned_by_default = yes
 }
-
 je_manifest_destiny_frontier_wars = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	# note that if you change this, also update the decision

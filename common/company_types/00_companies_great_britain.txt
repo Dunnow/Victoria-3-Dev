@@ -1,15 +1,12 @@
 ﻿# United Company of Merchants of England Trading to the East Indies
 company_east_india_company = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/gb_eic.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_tea_plantation
 		building_tobacco_plantation
 		building_opium_plantation
 	}
-	
 	potential = {
 		OR = {
 			country_has_primary_culture = cu:british
@@ -20,7 +17,6 @@ company_east_india_company = {
 			has_interest_marker_in_region = region_south_india
 		}
 	}
-	
 	possible = {
 		OR = {
 			AND = {
@@ -67,30 +63,23 @@ company_east_india_company = {
 			has_law = law_type:law_protectionism
 		}
 	}
-	
 	prosperity_modifier = {
 		country_convoys_capacity_mult = 0.2
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # J. & P. Coats
 company_j_p_coats = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/gb_jp_coats.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_textile_mills
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_north_sea_coast
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_LOWLANDS
@@ -102,33 +91,26 @@ company_j_p_coats = {
 		}
 		has_technology_researched = cotton_gin
 	}
-	
 	prosperity_modifier = {
 		building_textile_mills_throughput_add = 0.15
 		building_cotton_plantation_throughput_add = 0.05
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Sir W G Armstrong Whitworth & Co Ltd; Babylon - replaced navy offense/defense
 company_armstrong_whitworth = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/gb_armstrong_whitworth.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_military_shipyards
 		building_motor_industry
 		building_munition_plants
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_england
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_YORKSHIRE
@@ -141,33 +123,26 @@ company_armstrong_whitworth = {
 		has_technology_researched = ironclad_tech
 		has_technology_researched = gantry_cranes
 	}
-	
 	prosperity_modifier = {
 		interest_group_ig_armed_forces_approval_add = 2
 		building_steel_mills_throughput_add = 0.05
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # John Brown & Company
 company_john_brown = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/gb_jb_co.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_military_shipyards
 		building_shipyards
 		building_steel_mills
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_north_sea_coast
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_LOWLANDS
@@ -180,31 +155,24 @@ company_john_brown = {
 		has_technology_researched = steelworking
 		has_technology_researched = hydraulic_cranes
 	}
-	
 	prosperity_modifier = {
 		country_prestige_mult = 0.05
 		country_convoys_capacity_mult = 0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Great Western Railway
 company_gwr = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/gb_great_western_railway.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_railway
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_north_sea_coast
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_WEST_COUNTRY
@@ -227,33 +195,26 @@ company_gwr = {
 			has_building = building_railway
 		}
 	}
-	
 	prosperity_modifier = {
 		country_prestige_mult = 0.05
 		state_radicals_from_sol_change_mult = -0.05
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }
-
 # Bolckow, Vaughan & Co.
 company_bolckow_vaughan = {
 	texture = "gfx/interface/icons/company_icons/historical_company_icons/gb_bolckow_vaughan_and_co.dds"
-	
 	flavored_company = yes
-	
-	building_types = {  
+	building_types = {
 		building_coal_mine
 		building_iron_mine
 		building_steel_mills
 	}
-	
 	potential = {
 		has_interest_marker_in_region = region_england
 	}
-	
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_YORKSHIRE
@@ -269,13 +230,11 @@ company_bolckow_vaughan = {
 		}
 		has_technology_researched = bessemer_process
 	}
-	
 	prosperity_modifier = {
 		building_shipyards_throughput_add = 0.1
 		building_military_shipyards_throughput_add = 0.1
-	}	
-	
+	}
 	ai_weight = {
-		value = 3 # Higher base value for flavored companies
+		value = 3	# Higher base value for flavored companies
 	}
 }

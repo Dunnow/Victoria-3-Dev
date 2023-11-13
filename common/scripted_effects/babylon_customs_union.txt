@@ -20,7 +20,6 @@ weekly_country_multiply_minting = {
 				value = modifier:country_minting_add
 			}
 		}
-
 		set_variable = {
 			name = customs_mint_add_var
 			value = {
@@ -32,13 +31,10 @@ weekly_country_multiply_minting = {
 				subtract = local_var:tmp_total_add_var
 			}
 		}
-
-		add_modifier = { 
+		add_modifier = {
 			name = modifier_customs_union_payments_negative
 			multiplier = scope:target_country.var:customs_mint_add_var
 			days = 7
 		}
 	}
 }
-
-

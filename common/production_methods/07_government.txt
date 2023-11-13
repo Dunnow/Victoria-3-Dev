@@ -10,11 +10,10 @@
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 50			#20
+			country_convoys_capacity_add = 50	#20
 		}
 	}
 }
-
 pm_basic_port = {
 	texture = "gfx/interface/icons/production_method_icons/basic_port.dds"
 	building_modifiers = {
@@ -29,7 +28,7 @@ pm_basic_port = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 200			#150
+			country_convoys_capacity_add = 200	#150
 		}
 	}
 	state_modifiers = {
@@ -38,7 +37,6 @@ pm_basic_port = {
 		}
 	}
 }
-
 pm_industrial_port = {
 	texture = "gfx/interface/icons/production_method_icons/industrial_port.dds"
 	unlocking_technologies = {
@@ -58,7 +56,7 @@ pm_industrial_port = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 250			#175
+			country_convoys_capacity_add = 250	#175
 		}
 	}
 	state_modifiers = {
@@ -67,7 +65,6 @@ pm_industrial_port = {
 		}
 	}
 }
-
 pm_modern_port = {
 	texture = "gfx/interface/icons/production_method_icons/modern_port.dds"
 	unlocking_technologies = {
@@ -87,7 +84,7 @@ pm_modern_port = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 325			#225
+			country_convoys_capacity_add = 325	#225
 		}
 	}
 	state_modifiers = {
@@ -96,7 +93,6 @@ pm_modern_port = {
 		}
 	}
 }
-
 pm_simple_organization = {
 	texture = "gfx/interface/icons/production_method_icons/simple_organization.dds"
 	country_modifiers = {
@@ -115,7 +111,6 @@ pm_simple_organization = {
 		}
 	}
 }
-
 pm_horizontal_drawer_cabinets = {
 	texture = "gfx/interface/icons/production_method_icons/horizontal_drawer_cabinets.dds"
 	unlocking_technologies = {
@@ -140,7 +135,6 @@ pm_horizontal_drawer_cabinets = {
 		}
 	}
 }
-
 pm_vertical_filing_cabinets = {
 	texture = "gfx/interface/icons/production_method_icons/vertical_filing_cabinets.dds"
 	unlocking_technologies = {
@@ -165,7 +159,6 @@ pm_vertical_filing_cabinets = {
 		}
 	}
 }
-
 pm_switch_boards = {
 	texture = "gfx/interface/icons/production_method_icons/telephone_switchboards.dds"
 	unlocking_technologies = {
@@ -192,7 +185,6 @@ pm_switch_boards = {
 		}
 	}
 }
-
 pm_hereditary_bureaucrats = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_aristocrats.dds"
 	unlocking_laws = {
@@ -205,7 +197,6 @@ pm_hereditary_bureaucrats = {
 		}
 	}
 }
-
 pm_professional_bureaucrats = {
 	texture = "gfx/interface/icons/production_method_icons/professional_bureaucrats.dds"
 	disallowing_laws = {
@@ -217,7 +208,6 @@ pm_professional_bureaucrats = {
 		}
 	}
 }
-
 pm_secular_bureaucrats = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
 	disallowing_laws = {
@@ -229,7 +219,6 @@ pm_secular_bureaucrats = {
 		}
 	}
 }
-
 pm_religious_bureaucrats = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
 	disallowing_laws = {
@@ -243,7 +232,6 @@ pm_religious_bureaucrats = {
 		}
 	}
 }
-
 pm_scholastic_education = {
 	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
 	country_modifiers = {
@@ -267,7 +255,6 @@ pm_scholastic_education = {
 		}
 	}
 }
-
 pm_philosophy_department = {
 	texture = "gfx/interface/icons/production_method_icons/philosophy_dept.dds"
 	unlocking_technologies = {
@@ -295,7 +282,6 @@ pm_philosophy_department = {
 		}
 	}
 }
-
 pm_analytical_philosophy_department = {
 	texture = "gfx/interface/icons/production_method_icons/analytical_philosophy_department.dds"
 	unlocking_technologies = {
@@ -323,7 +309,6 @@ pm_analytical_philosophy_department = {
 		}
 	}
 }
-
 pm_secular_academia = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
 	disallowing_laws = {
@@ -336,7 +321,6 @@ pm_secular_academia = {
 		}
 	}
 }
-
 pm_religious_academia = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
 	disallowing_laws = {
@@ -350,7 +334,6 @@ pm_religious_academia = {
 		}
 	}
 }
-
 pm_skyscraper_bureaucratic_nexus = {
 	texture = "gfx/interface/icons/production_method_icons/skyscraper_bureaucratic_nexus.dds"
 	state_modifiers = {
@@ -369,7 +352,6 @@ pm_skyscraper_bureaucratic_nexus = {
 		}
 	}
 }
-
 pm_skyscraper_trade_nexus = {
 	texture = "gfx/interface/icons/production_method_icons/skyscraper_trade_nexus.dds"
 	unlocking_technologies = {
@@ -392,11 +374,9 @@ pm_skyscraper_trade_nexus = {
 		}
 	}
 }
-
 pm_no_airships = {
 	texture = "gfx/interface/icons/production_method_icons/no_airships.dds"
 }
-
 pm_airship_mooring_post = {
 	texture = "gfx/interface/icons/production_method_icons/airship_mooring_post.dds"
 	unlocking_technologies = {

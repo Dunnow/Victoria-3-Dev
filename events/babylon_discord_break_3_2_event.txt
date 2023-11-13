@@ -132,7 +132,6 @@ ideology_break_3_2_event.1 = {
 		}
 	}
 }
-
 ideology_break_3_2_event.2 = {
 	# draw a line - succesful resistance
 	type = country_event
@@ -156,7 +155,6 @@ ideology_break_3_2_event.2 = {
 		}
 	}
 }
-
 ideology_break_3_2_event.3 = {
 	# draw a line - succesful coup
 	type = country_event
@@ -184,7 +182,6 @@ ideology_break_3_2_event.3 = {
 		default_option = yes
 	}
 }
-
 ideology_break_3_2_event.4 = {
 	# Flee the city - civil war fires
 	type = country_event
@@ -210,7 +207,6 @@ ideology_break_3_2_event.4 = {
 		}
 	}
 }
-
 ideology_break_3_2_event.5 = {
 	# Flee the city - Battle won!
 	type = country_event
@@ -235,7 +231,6 @@ ideology_break_3_2_event.5 = {
 		}
 	}
 }
-
 ideology_break_3_2_event.6 = {
 	# Flee the city - Revolution!
 	type = country_event

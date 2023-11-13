@@ -1,7 +1,6 @@
 ﻿customs_union = {
 	requires_approval = yes
 	can_use_obligations = yes
-	
 	unlocking_technologies = {
 		international_trade
 	}
@@ -142,9 +141,9 @@
 		is_customs_union = yes
 		can_be_used_in_sway_offers = yes
 		sway_maneuvers_cost = 10
-		relations_progress_per_day = 1		# At 100, +1 relations
+		relations_progress_per_day = 1	# At 100, +1 relations
 		relations_improvement_max = 80
-		subject_type = subject_type_customs_union		# A customs union is technically a type of subject, though it isn't presented this way in-game
+		subject_type = subject_type_customs_union	# A customs union is technically a type of subject, though it isn't presented this way in-game
 		weekly_effect = {
 			weekly_country_multiply_minting = {
 				DIVISOR = 0.6
@@ -159,7 +158,7 @@
 			}
 		}
 		is_about_to_auto_break = {
-			scope:target_country.relations:root < 23			# this is: cordial + 3
+			scope:target_country.relations:root < 23	# this is: cordial + 3
 		}
 		should_auto_break = {
 			custom_tooltip = {
@@ -208,6 +207,7 @@
 							}
 						}
 						25 = {
+
 						}
 					}
 				}
@@ -226,6 +226,7 @@
 							}
 						}
 						50 = {
+
 						}
 					}
 				}
@@ -677,7 +678,6 @@
 		}
 	}
 }
-
 join_customs_union = {
 	requires_approval = yes
 	can_use_obligations = yes
@@ -823,7 +823,6 @@ join_customs_union = {
 		}
 	}
 }
-
 change_customs_union = {
 	requires_approval = yes
 	can_use_obligations = yes

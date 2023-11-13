@@ -2,11 +2,9 @@
 	base_enactment_days = 30
 	law_group_category = human_rights
 	enactment_approval_mult = 0.1
-	
 	progressive_movement_chance = 5
 	regressive_movement_chance = 5
 }
-
 lawgroup_home_defence = {
 	base_enactment_days = 180
 	law_group_category = power_structure
